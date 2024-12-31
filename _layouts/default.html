@@ -32,11 +32,10 @@
       <p>{{ site.description }}</p>
     </div>
     <div class="social-links">
-      <span>Ankit Patterson</span>
       <a href="{{ site.social.linkedin }}" class="button">LinkedIn</a>
       <a href="{{ site.social.github }}" class="button">GitHub</a>
       <a href="{{ site.social.bluesky }}" class="button">BlueSky</a>
-      <button id="theme-toggle">Dark Theme</button>
+      <button id="theme-toggle" class="button">Dark Theme</button>
     </div>
   </header>
   <!-- <nav>
@@ -50,7 +49,7 @@
     {{ content }}
   </main>
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
   </footer>
 </body>
 
