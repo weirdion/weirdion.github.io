@@ -24,4 +24,33 @@ body.dark-theme {
   --background-color: #1e1e1e;
   --text-color: #c9d1d9;
   --link-color: #58a6ff;
+  --button-background-color: #333;
+  --button-hover-background-color: #555;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+body.dark-theme .button {
+  background-color: var(--button-background-color);
+}
+
+body.dark-theme .button:hover {
+  background-color: var(--button-hover-background-color);
 }
