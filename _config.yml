@@ -2,7 +2,7 @@ title: Ankit Patterson's Blog
 description: A blog to document my tinkerings and learnings.
 baseurl: "/"
 url: "https://weirdion.github.io"
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

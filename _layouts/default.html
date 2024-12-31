@@ -7,22 +7,6 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {% seo %}
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const currentTheme = localStorage.getItem('theme') || 'light';
-      document.body.classList.toggle('dark-theme', currentTheme === 'dark');
-
-      const themeToggle = document.getElementById('theme-toggle');
-      themeToggle.innerText = currentTheme === 'dark' ? 'Light Theme' : 'Dark Theme';
-
-      themeToggle.addEventListener('click', function () {
-        document.body.classList.toggle('dark-theme');
-        const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-        localStorage.setItem('theme', newTheme);
-        themeToggle.innerText = newTheme === 'dark' ? 'Light Theme' : 'Dark Theme';
-      });
-    });
-  </script>
 </head>
 
 <body>
@@ -35,21 +19,13 @@
       <a href="{{ site.social.linkedin }}" class="button">LinkedIn</a>
       <a href="{{ site.social.github }}" class="button">GitHub</a>
       <a href="{{ site.social.bluesky }}" class="button">BlueSky</a>
-      <button id="theme-toggle" class="button">Dark Theme</button>
     </div>
   </header>
-  <!-- <nav>
-    <ul>
-      <li><a href="{{ " /" | relative_url }}">Home</a></li>
-      <li><a href="{{ " /about" | relative_url }}">About</a></li>
-      <li><a href="{{ " /blog" | relative_url }}">Blog</a></li>
-    </ul>
-  </nav> -->
   <main>
     {{ content }}
   </main>
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
 </body>
 
