@@ -19,3 +19,9 @@ footer {
   background-color: #f8f8f8;
   border-top: 1px solid #e7e7e7;
 }
+
+body.dark-theme {
+  --background-color: #1e1e1e;
+  --text-color: #c9d1d9;
+  --link-color: #58a6ff;
+}

@@ -7,6 +7,22 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ " /assets/css/style.css" | relative_url }}">
   {% seo %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      document.body.classList.toggle('dark-theme', currentTheme === 'dark');
+
+      const themeToggle = document.getElementById('theme-toggle');
+      themeToggle.innerText = currentTheme === 'dark' ? 'Light Theme' : 'Dark Theme';
+
+      themeToggle.addEventListener('click', function () {
+        document.body.classList.toggle('dark-theme');
+        const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+        localStorage.setItem('theme', newTheme);
+        themeToggle.innerText = newTheme === 'dark' ? 'Light Theme' : 'Dark Theme';
+      });
+    });
+  </script>
 </head>
 
 <body>
