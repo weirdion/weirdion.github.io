@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ " /assets/css/style.css" | relative_url }}">
+  {% seo %}
+</head>
+
+<body>
+  <header class="header-container">
+    <div>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+    </div>
+    <div class="social-links">
+      <span>Ankit Patterson</span>
+      <a href="{{ site.social.linkedin }}">LinkedIn</a>
+      <a href="{{ site.social.github }}">GitHub</a>
+      <a href="{{ site.social.bluesky }}">BlueSky</a>
+    </div>
+  </header>
+  <!-- <nav>
+    <ul>
+      <li><a href="{{ " /" | relative_url }}">Home</a></li>
+      <li><a href="{{ " /about" | relative_url }}">About</a></li>
+      <li><a href="{{ " /blog" | relative_url }}">Blog</a></li>
+    </ul>
+  </nav> -->
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+
+</html>
