@@ -4,12 +4,13 @@ baseurl: "/"
 url: "https://weirdion.github.io"
 theme: minima
 
-minima:
-  show_excerpts: true
-  social_links:
-    - { platform: github, url: "https://github.com/weirdion" }
-    - { platform: linkedin, url: "https://www.linkedin.com/in/ankitpatterson" }
-    - { platform: bluesky, url: "https://bsky.app/profile/weirdion.bsky.social" }
+# minima configuration for < 3.0
+show_excerpts: true
+github_username:  weirdion
+linkedin_username: ankitpatterson
+bluesky_username: weirdion.bsky.social
+author: "Ankit Patterson"
+email: "dev@weirdion.com"
 
 plugins:
   - jekyll-feed
@@ -24,9 +25,6 @@ collections:
 permalink: /:categories/:year/:month/:day/:title/
 paginate: 10
 paginate_path: "/page:num/"
-author:
-  name: "Ankit Patterson"
-  email: "dev@weirdion.com"
 
 defaults:
   - scope:
