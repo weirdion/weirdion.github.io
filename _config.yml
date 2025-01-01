@@ -8,11 +8,8 @@ theme: minima
 show_excerpts: true
 github_username:  weirdion
 linkedin_username: ankitpatterson
-bluesky_username: weirdion.bsky.social
+bluesky_username: weirdion
 author: "Ankit Patterson"
-
-social_links:
-  github:
 
 plugins:
   - jekyll-feed
