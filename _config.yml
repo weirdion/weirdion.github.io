@@ -5,7 +5,7 @@ url: "https://weirdion.github.io"
 theme: minima
 
 minima:
-  skin: auto
+  skin: dark
   show_excerpts: true
   social_links:
     - { platform: github, url: "https://github.com/weirdion" }
