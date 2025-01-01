@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Welcome to Ankit Patterson's Blog"
+title: "Welcome!"
 ---
 
 Welcome to my blog! Here, I document my tinkerings and learnings.

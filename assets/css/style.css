@@ -1,0 +1,25 @@
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links .svg-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.footer-col .svg-icon {
+  width: 19px;
+  height: 19px;
+}
