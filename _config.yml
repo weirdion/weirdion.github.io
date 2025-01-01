@@ -1,5 +1,6 @@
 title: Ankit Patterson's Blog
 description: A blog to document my tinkerings and learnings.
+intro: A developer who likes to build and break things, but with automation.
 baseurl: "/"
 url: "https://weirdion.github.io"
 theme: minima
