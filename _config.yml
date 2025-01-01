@@ -2,7 +2,16 @@ title: Ankit Patterson's Blog
 description: A blog to document my tinkerings and learnings.
 baseurl: "/"
 url: "https://weirdion.github.io"
-theme: jekyll-theme-minimal
+theme: minima
+
+minima:
+  skin: auto
+  show_excerpts: true
+  social_links:
+    - { platform: github, url: "https://github.com/weirdion" }
+    - { platform: linkedin, url: "https://www.linkedin.com/in/ankitpatterson" }
+    - { platform: bluesky, url: "https://bsky.app/profile/weirdion.bsky.social" }
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -19,10 +28,7 @@ paginate_path: "/page:num/"
 author:
   name: "Ankit Patterson"
   email: "dev@weirdion.com"
-social:
-  bluesky: "https://bsky.app/profile/weirdion.bsky.social"
-  github: "weirdion"
-  linkedin: "https://www.linkedin.com/in/ankitpatterson"
+
 defaults:
   - scope:
       path: ""
