@@ -10,7 +10,9 @@ github_username:  weirdion
 linkedin_username: ankitpatterson
 bluesky_username: weirdion.bsky.social
 author: "Ankit Patterson"
-email: "dev@weirdion.com"
+
+social_links:
+  github:
 
 plugins:
   - jekyll-feed
