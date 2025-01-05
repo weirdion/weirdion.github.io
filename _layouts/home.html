@@ -1,18 +1,22 @@
 ---
 layout: default
+pagination:
+  enabled: true
 ---
 
 <div class="home">
+  <!-- This is root index.html file, so no need to display title
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
+  -->
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in paginator.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -28,6 +32,24 @@ layout: default
       {%- endfor -%}
     </ul>
 
+    <div class="pagination">
+      {%- if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">Previous</a>
+      {%- endif %}
+      <!-- For pagination numbers if needed
+      {%- for page in (1..paginator.total_pages) -%}
+        {%- if page == paginator.page %}
+          <span class="page-number current">{{ page }}</span>
+        {%- else %}
+          <a href="{{ paginator.page_path | replace: ':num', page }}" class="page-number">{{ page }}</a>
+        {%- endif %}
+      {%- endfor -%}
+      -->
+
+      {%- if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">Next</a>
+      {%- endif %}
+    </div>
   {%- endif -%}
 
 </div>
