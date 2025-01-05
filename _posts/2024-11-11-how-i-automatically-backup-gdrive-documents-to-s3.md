@@ -34,13 +34,13 @@ user intervention, but we can circle back to that.
 
 ## Key Components
 
- **RClone reads from Google Drive** :  
+ **RClone reads from Google Drive** :
 [rclone](https://rclone.org/drive/) is the core of this solution. For this use
 case, I configured it to access Google Drive with `drive.readonly`
 [permission](https://rclone.org/drive/#drive-readonly) to grant read-only
 access to all the files. The rclone scopes are mapped to [Google Drive API scopes](https://developers.google.com/drive/api/guides/api-specific-auth).
 
- **RClone stores into S3 Storage (Instant Retrieval class)** :  
+ **RClone stores into S3 Storage (Instant Retrieval class)** :
 The [S3 Glacier storage class family](https://aws.amazon.com/s3/storage-classes/glacier/)
 is ideal for long-lived data archiving with minimal read
 access, making it low-cost option. I am choosing to use
@@ -49,14 +49,14 @@ access, making it low-cost option. I am choosing to use
 retrievals, albeit at a higher retrieval API call cost.
 [S3 Pricing link](https://aws.amazon.com/s3/pricing/) for full details.
 
-S3 Standard — storage cost: $0.023 per GB — GET per 1k requests: $0.0004  
+S3 Standard — storage cost: $0.023 per GB — GET per 1k requests: $0.0004
 S3 Glacier IR — storage cost: $0.004 per GB — GET per 1k requests: $0.01
 
 The assumption here is that we are using S3 as a redundancy, and we really
 don’t need to retrieve data except for testing and in case Google Drive
 account is unavailable for any reason.
 
- **Scheduled Workflow (optional, but recommended)** :  
+ **Scheduled Workflow (optional, but recommended)** :
 By setting up a scheduled job, the backup process automatically runs at
 predefined intervals, ensuring your data remains up-to-date in S3 without
 manual oversight. To keep it simple and minimize the cost, I chose Github
@@ -84,13 +84,13 @@ The `~/.rclone.conf` generated will add a block similar to this, where
 `GDrive` is the name I chose,
 
 ```
-[GDrive]  
-    type = drive  
-    scope = drive.readonly  
-    token = {"access_token": "abcd1234",  
-             "token_type":"Bearer",  
-             "refresh_token": "wxyz9876",  
-             "expiry":"2024-11-09T19:21:34.729137-04:00"}
+[GDrive]
+type = drive
+scope = drive.readonly
+token = {"access_token": "abcd1234",
+          "token_type":"Bearer",
+          "refresh_token": "wxyz9876",
+          "expiry":"2024-11-09T19:21:34.729137-04:00"}
 
 ```
 2\. Set up S3 access
@@ -109,14 +109,14 @@ Once done, the `~/.rclone.conf` will add a block similar to this, where
 `AWSS3` is the name I chose,
 
 ```
-[AWSS3]  
-    type = s3  
-    provider = AWS  
-    region = us-east-1  
-    env_auth = true  
-    acl = private  
-    storage_class = GLACIER_IR  
-    bucket_acl = private
+[AWSS3]
+type = s3
+provider = AWS
+region = us-east-1
+env_auth = true
+acl = private
+storage_class = GLACIER_IR
+bucket_acl = private
 
 ```
 3\. Test it out!

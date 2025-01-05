@@ -39,16 +39,15 @@ for LUKS2 ([LUKS man page reference](https://man7.org/linux/man-pages/man8/crypt
 This allows us to maintain our existing passphrase(s) while adding a new key-file.
 
 ```
-# Check available keyslots  
-    cryptsetup luksDump /dev/sdb1  
-      
-    # Generate a cryptographically secure keyfile  
-    dd if=/dev/random bs=32 count=1 of=my-keyfile  
-      
-    # Add the keyfile to your encrypted drive  
-    cryptsetup luksAddKey /dev/sdb1 /path/to/my-keyfile  
-    >Enter any existing passphrase:
+# Check available keyslots
+cryptsetup luksDump /dev/sdb1
 
+# Generate a cryptographically secure keyfile
+dd if=/dev/random bs=32 count=1 of=my-keyfile
+
+# Add the keyfile to your encrypted drive
+cryptsetup luksAddKey /dev/sdb1 /path/to/my-keyfile
+>Enter any existing passphrase:
 ```
 ## Secure Key Storage
 
@@ -59,7 +58,7 @@ previous step.
 
 We are going to be accessing the `my-keyfile` using Github’s “Fine-Grained
 Personal Access Token”, to enable minimal read permissions and access
-authenticated API access.  
+authenticated API access.
 We can create and manage them under Profile -> Settings -> Developer Settings,
 or by accessing the direct link — [Personal Access Token Settings](https://github.com/settings/personal-access-tokens).
 
@@ -77,54 +76,51 @@ how we’ll modify the startup process:
   * Adding custom boot scripts
 
 ```
-# Set up directory for custom scripts  
-    mkdir -p /boot/custom/bin  
-      
-    # touch script files  
-    touch /boot/custom/bin/{fetch_key,delete_key}
+# Set up directory for custom scripts
+mkdir -p /boot/custom/bin
 
+# touch script files
+touch /boot/custom/bin/{fetch_key,delete_key}
 ```
-* Create script to fetch key-file in `/boot/custom/bin/fetch_key`   
+* Create script to fetch key-file in `/boot/custom/bin/fetch_key`
 Here the `github_pat_XXXyyyZZZ` is the Personal Access Token we generated in
 Github, and `/username/foobar` is the username and repository name used.
 
 ```
-#!/bin/bash  
-      
-    # Only fetch if keyfile doesn't exist  
-    if [[ ! -e /root/keyfile ]]; then  
-      curl -H "Authorization: token github_pat_XXXYYYZZZ" \  
-           https://raw.githubusercontent.com/username/foobar/main/my-keyfile \  
-           -o /root/keyfile  
-    fi
+#!/bin/bash
 
+# Only fetch if keyfile doesn't exist
+if [[ ! -e /root/keyfile ]]; then
+  curl -H "Authorization: token github_pat_XXXYYYZZZ" \
+    https://raw.githubusercontent.com/username/foobar/main/my-keyfile \
+    -o /root/keyfile
+fi
 ```
 * Create script to delete key-file after use in `/boot/custom/bin/delete_key`
 
 ```
-#!/bin/bash  
-      
-    # Remove keyfile after successful array start  
-    rm -f /root/keyfile
+#!/bin/bash
 
+# Remove keyfile after successful array start
+rm -f /root/keyfile
 ```
 * Edit `/boot/config/go` to set up our event handlers, this file is used to launch Unraid’s management interface.
 
 ```
-#!/bin/bash  
-      
-    # Configure event handlers for keyfile management  
-    # Create event directories if they don't exist  
-    mkdir -p /usr/local/emhttp/webGui/event/{starting,started,stopped}  
-    # Copy over the event scripts  
-    cp -f /boot/custom/bin/fetch_key /usr/local/emhttp/webGui/event/starting  
-    cp -f /boot/custom/bin/delete_key /usr/local/emhttp/webGui/event/started  
-    cp -f /boot/custom/bin/fetch_key /usr/local/emhttp/webGui/event/stopped  
-    # Make the scripts executable  
-    chmod a+x /usr/local/emhttp/webGui/event/{starting/fetch_key,started/delete_key,stopped/fetch_key}  
-      
-    # Launch Unraid's management interface  
-    /usr/local/sbin/emhttp &
+#!/bin/bash
+
+# Configure event handlers for keyfile management
+# Create event directories if they don't exist
+mkdir -p /usr/local/emhttp/webGui/event/{starting,started,stopped}
+# Copy over the event scripts
+cp -f /boot/custom/bin/fetch_key /usr/local/emhttp/webGui/event/starting
+cp -f /boot/custom/bin/delete_key /usr/local/emhttp/webGui/event/started
+cp -f /boot/custom/bin/fetch_key /usr/local/emhttp/webGui/event/stopped
+# Make the scripts executable
+chmod a+x /usr/local/emhttp/webGui/event/{starting/fetch_key,started/delete_key,stopped/fetch_key}
+
+# Launch Unraid's management interface
+/usr/local/sbin/emhttp &
 
 ```
 ## Enabling Automatic Array Start in Unraid
