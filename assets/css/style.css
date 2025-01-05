@@ -1,3 +1,4 @@
+/* Header */
 .site-header .wrapper {
   display: flex;
   justify-content: space-between;
@@ -19,6 +20,7 @@
   height: 26px;
 }
 
+/* Footer */
 .footer-col .svg-icon {
   width: 19px;
   height: 19px;
@@ -28,8 +30,29 @@
   padding-top: 10px;
 }
 
+/* Home Page */
 .pagination {
   display: flex;
   gap: 10px;
   margin-top: 20px;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-thumbnail {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.post-thumbnail img {
+  width: 120px;
+  height: auto;
+}
+
+.post-details {
+  flex-grow: 1;
 }
