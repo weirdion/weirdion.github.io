@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Make Build Serve",
+      "type": "node",
+      "request": "launch",
+      "preLaunchTask": "make build serve"
+    },
+    {
+      "name": "Make Serve",
+      "type": "node",
+      "request": "launch",
+      "preLaunchTask": "make serve"
+    }
+  ]
+}

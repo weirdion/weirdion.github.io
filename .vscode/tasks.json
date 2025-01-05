@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "make build serve",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "build",
+        "serve"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "make serve",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "serve"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
