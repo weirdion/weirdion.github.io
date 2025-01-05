@@ -3,9 +3,8 @@ title: "How I automatically backup Google Drive documents to Amazon S3 Glacier I
 date: 2024-11-11
 categories: ["Disaster Recovery", "AWS", "Python", "Rclone", "Backup"]
 tags: ["disaster-recovery", "aws", "python", "rclone", "backup"]
-description: How I automatically backup Google Drive documents to Amazon S3 Glacier IR Project Overview
+excerpt: How to automate the backup of Google Drive documents to Amazon S3 Glacier IR using Python and rclone.
 ---
-
 
 In today’s digital landscape, data backup is crucial for businesses and
 individuals alike. My partner and I use Google Drive to store and share our
