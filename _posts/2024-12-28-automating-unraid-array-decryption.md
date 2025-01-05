@@ -83,6 +83,7 @@ mkdir -p /boot/custom/bin
 touch /boot/custom/bin/{fetch_key,delete_key}
 ```
 * Create script to fetch key-file in `/boot/custom/bin/fetch_key`
+
 Here the `github_pat_XXXyyyZZZ` is the Personal Access Token we generated in
 Github, and `/username/foobar` is the username and repository name used.
 
