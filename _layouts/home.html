@@ -17,17 +17,23 @@ pagination:
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in paginator.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+      <li class="post-item">
+        <div class="post-thumbnail">
+          {%- assign post_thumbnail = post.path | split: '/' | last | replace: '.md', '.jpg' -%}
+          <img src="{{ '/assets/images/' | append: post_thumbnail | relative_url }}" alt="{{ post.title | escape }}">
+        </div>
+        <div class="post-details">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </div>
       </li>
       {%- endfor -%}
     </ul>
