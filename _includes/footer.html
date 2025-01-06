@@ -6,7 +6,7 @@
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <div class="footer-col fc1">
         <ul class="contact-list">
           <li class="p-name">
             {{ site.author | escape }}
@@ -20,11 +20,13 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
-        <!-- Add routing paths when needed here -->
+      <div class="footer-col fc2">
+          {%- if page.layout == "post" -%}
+          <a href="{{ '/' | relative_url }}">Home</a></li>
+          {%- endif -%}
       </div>
 
-      <div class="footer-col footer-col-3">
+      <div class="footer-col fc3">
         {%- include social.html -%}
       </div>
     </div>

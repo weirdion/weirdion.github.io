@@ -8,7 +8,8 @@
 .social-links {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: flex-end;
+  margin-left: auto;
 }
 
 .social-links a {
@@ -26,8 +27,76 @@
   height: 19px;
 }
 
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-list, .social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+  color: #828282;
+}
+
+.footer-col {
+  flex: 1;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  min-width: 200px;
+}
+
+.footer-col.fc1 {
+  flex: 2;
+}
+
+.footer-col.fc2 {
+  flex: 2;
+  margin-bottom: 30px;
+}
+
+.footer-col.fc3 {
+  flex: 1;
+}
+
+.social-links .svg-icon {
+  width: 26px;
+  height: 26px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-col {
+    flex: 1 1 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-col {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer-col.fc2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .intro-text {
   padding-top: 10px;
+}
+
+.footer-col.fc3 .social-media-list li {
+  text-align: start;
 }
 
 /* Home Page */
