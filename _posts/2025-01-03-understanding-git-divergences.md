@@ -217,5 +217,4 @@ exactly what’s going on and how to handle it. Happy coding! 🎉
  _I’m trying to get better about writing about things I do. Let me know if you
 found this useful_ 🙂 _._
 
- _Connect with me on_[
-_LinkedIn_](https://www.linkedin.com/in/ankitpatterson/) _._
+ _Connect with me on_ [_LinkedIn_](https://www.linkedin.com/in/ankitpatterson/) _._
