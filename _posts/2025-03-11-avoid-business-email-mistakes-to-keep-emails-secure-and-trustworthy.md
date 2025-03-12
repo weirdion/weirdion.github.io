@@ -27,7 +27,7 @@ Headers have been trimmed to highlight the key parts for the blog.
 
 ### Content
 
-![Screenshot of email content showing a brief message with a View Statement button, followed by details of the clinic.](/assets/images/2025-03-11-avoid-business-email-mistakes-to-keep-emails-secure-and-trustworthy.png)
+![Screenshot of email content showing a brief message with a View Statement button, followed by details of the clinic.](/assets/images/2025-03-11-avoid-business-email-mistakes-to-keep-emails-secure-and-trustworthy.jpg)
 
 ## Why is this bad?
 
