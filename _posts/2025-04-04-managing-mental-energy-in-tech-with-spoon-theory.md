@@ -17,9 +17,9 @@ I think it applies just as much to mental health, especially in high-pressure en
 
 ## The Invisible Drain: A Thought Experiment
 
-Imagine you have 12 spoons in your hands. Every meaningful action you take - getting out of bed, answering emails and slack messages, debugging code - requires you to give up a spoon. Some tasks cost more spoons than expected, draining your mental energy faster. You don't get them back until you rest and recover.
-
 ![AI generated image of a developer working on their laptop while their spoons float around them getting depleted.](/assets/images/2025-04-04-managing-mental-energy-in-tech-with-spoon-theory.jpg)
+
+Imagine you have 12 spoons in your hands. Every meaningful action you take - getting out of bed, answering emails and slack messages, debugging code - requires you to give up a spoon. Some tasks cost more spoons than expected, draining your mental energy faster. You don't get them back until you rest and recover.
 
 Now, imagine your co-workers  don't see these spoons. They think you have the same mental energy as they do and keep asking you for more. You feel pressure to push through, even though you know you're running on empty. Where does more spoons to fill the gap come from? You borrow from your personal life and give it to your work instead. That's the invisible drain.
 
