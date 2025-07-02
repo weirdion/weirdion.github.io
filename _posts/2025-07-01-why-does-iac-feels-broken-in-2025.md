@@ -1,10 +1,10 @@
 ---
 title: "Why Infrastructure as Code Feels Broken in 2025"
-description: "Despite years of evolution, Infrastructure as Code still feels fragile and complex in 2025. This post explores why today’s tools struggle with composability, state, testing, and multi-cloud."
+description: "Infrastructure as Code still feels fragile and complex in 2025. This post explores why today’s tools struggle with composability, state, testing, and multi-cloud."
 date: 2025-07-01
 categories: [Infrastructure, AWS, Cloud, DevOps]
 tags: [iac, aws, cdk, terraform, pulumi, cloud, devops, multi-cloud, state-management]
-excerpt: "Despite years of evolution, Infrastructure as Code still feels fragile and complex in 2025. This post explores why today’s tools struggle with composability, state, testing, and multi-cloud."
+excerpt: "Infrastructure as Code still feels fragile and complex in 2025. This post explores why today’s tools struggle with composability, state, testing, and multi-cloud."
 ---
 I’ve worked with infrastructure in one form or another for years now — from click-ops to CDK, Pulumi, and Terraform. The tooling has definitely evolved, but so has the complexity. And lately, I’ve found myself asking a frustrating question more and more often:
 
