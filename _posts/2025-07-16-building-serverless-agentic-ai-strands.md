@@ -1,10 +1,10 @@
 ---
 title: "Building a Serverless Agentic AI with Strands and AWS"
-description: ""
+description: "How to build and deploy a serverless agentic AI REST API using AWS Strands SDK."
 date: 2025-07-16
-categories: [Strands, AWS, Cloud, Agentic AI, GenAI, AI, IaC, Infrastructure as Code, Serverless]
-tags: []
-excerpt: ""
+categories: [Strands, AWS, Cloud, Agentic AI, GenAI, AI, IaC, Infrastructure as Code, Serverless, Bedrock]
+tags: ["strands-sdk", "lambda", "api-gateway", "bedrock", "claude", "python", "typescript", "cdk", "rest-api", "lambda-layers"]
+excerpt: "How to build and deploy a serverless agentic AI REST API using AWS Strands SDK."
 ---
 **_Disclaimer:_** _I work at AWS, but this is a weekend project to test out the new sdk._
 
