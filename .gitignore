@@ -129,3 +129,5 @@ Gemfile.lock
 /resources/
 _site/
 
+# blowfish theme
+themes/blowfish
