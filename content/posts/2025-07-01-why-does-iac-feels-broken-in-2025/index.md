@@ -1,18 +1,37 @@
----
-title: "Why Infrastructure as Code Feels Broken in 2025"
-description: "Infrastructure as Code still feels fragile and complex in 2025. This post explores why today’s tools struggle with composability, state, testing, and multi-cloud."
-date: 2025-07-01
-categories: [Infrastructure, AWS, Cloud, DevOps]
-tags: [iac, aws, cdk, terraform, pulumi, cloud, devops, multi-cloud, state-management]
-excerpt: "Infrastructure as Code still feels fragile and complex in 2025. This post explores why today’s tools struggle with composability, state, testing, and multi-cloud."
----
++++
+title = "Why Infrastructure as Code Feels Broken in 2025"
+description = "Discover why Infrastructure as Code tools like Terraform, CDK, and Pulumi still feel fragile and complex, plus solutions for better IaC workflows."
+date = 2025-07-01
+categories = ["Infrastructure", "AWS", "Cloud", "DevOps"]
+tags = ["iac", "aws", "cdk", "terraform", "pulumi", "cloud", "devops", "multi-cloud", "state-management"]
+draft = false
+canonical = "https://weirdion.github.io/posts/2025-07-01-why-does-iac-feels-broken-in-2025/"
++++
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Infrastructure as Code Feels Broken in 2025",
+  "description": "Discover why Infrastructure as Code tools like Terraform, CDK, and Pulumi still feel fragile and complex, plus solutions for better IaC workflows.",
+  "image": "https://weirdion.github.io/assets/images/2025-07-01-why-does-iac-feels-broken-in-2025.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Ankit Patterson"
+  },
+  "datePublished": "2025-07-01",
+  "mainEntityOfPage": "@id"
+}
+</script>
+
 I’ve worked with infrastructure in one form or another for years now — from click-ops to CDK, Pulumi, and Terraform. The tooling has definitely evolved, but so has the complexity. And lately, I’ve found myself asking a frustrating question more and more often:
 
 **Why does infrastructure as code still feel so… brittle?**
 
 We have more tools than ever. And yet, getting a clean, reliable, and collaborative setup across teams still takes effort, workarounds, and too much time fiddling with low-level quirks. I’m not trying to be cynical or trying to dunk on any one tool. But as an engineer, I can’t shake the feeling that our current abstractions are reaching their limits.
 
-![AI generated image of developers trying to scaffold a building of blocks into the cloud with message bubbles like API Breakage, State and IAM mess visible around them.](/assets/images/2025-07-01-why-does-iac-feels-broken-in-2025.jpg)
+![AI generated image of developers trying to scaffold a building of blocks into the cloud with message bubbles like API Breakage, State and IAM mess visible around them.](featured.jpg)
 
 
 ## **🚧 The Friction in Today’s Tooling**

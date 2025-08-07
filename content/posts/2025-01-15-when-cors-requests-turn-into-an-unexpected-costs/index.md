@@ -1,15 +1,17 @@
----
-title: "When CORS Requests Turn into an Unexpected Costs at Your API Gateway"
-categories: ["AWS", "Cloud Architecture", "API Gateway", "Cloud Cost Optimization", "Software Architecture"]
-tags: ["aws", "cloud-architecture", "api-gateway", "cloud-cost-optimization", "software-architecture"]
-excerpt: How CORS requests can unexpectedly increase your API Gateway costs, and strategies to optimize your architecture and expenses.
----
++++
+title = "When CORS Requests Turn into an Unexpected Costs at Your API Gateway"
+description = "How CORS requests can unexpectedly increase your API Gateway costs, and strategies to optimize your architecture and expenses."
+date = 2025-01-15
+categories = ["AWS", "Cloud Architecture", "API Gateway", "Cloud Cost Optimization", "Software Architecture"]
+tags = ["aws", "cloud-architecture", "api-gateway", "cloud-cost-optimization", "software-architecture"]
+draft = false
++++
 
 So you've built this awesome website hosted on `example.com`, and it needs to talk to your super cool API running on `api.example.com` through API Gateway. Simple enough, right? Well, not so fast! Enter CORS (Cross-Origin Resource Sharing), the bouncer at the API club that needs to check everyone's ID twice.
 
 ## The CORS Dance 🕺
 
-![Diagram showing the workflow of website making a cross-origin request](/assets/images/2025-01-15-when-cors-requests-turn-into-an-unexpected-costs-overview.jpg)
+![Diagram showing the workflow of website making a cross-origin request](overview.jpg)
 
 Let's break down what actually happens when your website makes a request:
 
@@ -79,7 +81,7 @@ Total with preflight requests =
   = 864,000,000 requests/month
 ```
 
-![AI Generated image of person running after money with wings that are flying away out of reach](/assets/images/2025-01-15-when-cors-requests-turn-into-an-unexpected-costs.jpg)
+![AI Generated image of person running after money with wings that are flying away out of reach](featured.jpg)
 
 ## Better Approaches
 

@@ -1,11 +1,11 @@
----
-title: "Managing Mental Energy in Tech with Spoon Theory"
-description: "How to use Spoon Theory to manage mental energy while working in tech."
-date: 2025-04-04
-categories: [mental-health, productivity, work-life-balance, tech-culture, burnout]
-tags: [mental health, burnout, remote work, tech industry, productivity tips, spoon theory, work-life balance]
-excerpt: "Spoon Theory offers a powerful way to understand and manage mental energy in high-pressure environments like tech. Learn how to protect your spoons and thrive."
----
++++
+title = "Managing Mental Energy in Tech with Spoon Theory"
+description = "How to use Spoon Theory to manage mental energy while working in tech."
+date = 2025-04-04
+categories = ["mental-health", "productivity", "work-life-balance", "tech-culture", "burnout"]
+tags = ["mental health", "burnout", "remote work", "tech industry", "productivity tips", "spoon theory", "work-life balance"]
+draft = false
++++
 
 If you work in the world of tech, you probably know the feeling: deadlines pile up,
 Slack messages keep coming, and somewhere in the chaos, you are supposed to find time
@@ -17,7 +17,7 @@ I think it applies just as much to mental health, especially in high-pressure en
 
 ## The Invisible Drain: A Thought Experiment
 
-![AI generated image of a developer working on their laptop while their spoons float around them getting depleted.](/assets/images/2025-04-04-managing-mental-energy-in-tech-with-spoon-theory.jpg)
+![AI generated image of a developer working on their laptop while their spoons float around them getting depleted.](featured.jpg)
 
 Imagine you have 12 spoons in your hands. Every meaningful action you take - getting out of bed, answering emails and slack messages, debugging code - requires you to give up a spoon. Some tasks cost more spoons than expected, draining your mental energy faster. You don't get them back until you rest and recover.
 

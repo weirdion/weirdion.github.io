@@ -1,18 +1,19 @@
----
-title: "Building a Serverless Agentic AI with Strands and AWS"
-description: "How to build and deploy a serverless agentic AI REST API using AWS Strands SDK."
-date: 2025-07-16
-categories: [Strands, AWS, Cloud, Agentic AI, GenAI, AI, IaC, Infrastructure as Code, Serverless, Bedrock]
-tags: ["strands-sdk", "lambda", "api-gateway", "bedrock", "claude", "python", "typescript", "cdk", "rest-api", "lambda-layers"]
-excerpt: "How to build and deploy a serverless agentic AI REST API using AWS Strands SDK."
----
++++
+title = "Building a Serverless Agentic AI with Strands and AWS"
+description = "How to build and deploy a scalable, serverless agentic AI REST API using the AWS Strands SDK, Bedrock, Lambda, and CDK."
+date = 2025-07-16
+categories = ["Strands", "AWS", "Cloud", "Agentic AI", "GenAI", "AI", "IaC", "Infrastructure as Code", "Serverless", "Bedrock"]
+tags = ["strands-sdk", "lambda", "api-gateway", "bedrock", "claude", "python", "typescript", "cdk", "rest-api", "lambda-layers"]
+draft = false
++++
+
 **_Disclaimer:_** _I work at AWS, but this is a weekend project to test out the new sdk._
 
 As a developer, there’s one thing I keep bumping into: all the hyped, cool proof-of-concept demos and not enough actually useful, actionable examples. I love a good AI demo as much as anyone, but most of them stop just short of being something you’d actually ship. I wanted something I could drop into a real project, not just a hackathon.
 
 So here’s my simple example to deploy a REST API that invokes an agentic AI to reason and act — without the overhead.
 
-![AI generated image showing a robot with the text Agentic AI Strands with a visual representation of AWS cloud with Lambda and a laptop screen with code.](/assets/images/2025-07-16-building-serverless-agentic-ai-strands.jpg "AI generated image showing a robot with the text Agentic AI Strands with a visual representation of AWS cloud with Lambda and a laptop screen with code.")
+![AI generated image showing a robot with the text Agentic AI Strands with a visual representation of AWS cloud with Lambda and a laptop screen with code.](featured.jpg "AI generated image showing a robot with the text Agentic AI Strands with a visual representation of AWS cloud with Lambda and a laptop screen with code.")
 
 ### What is Strands?
 

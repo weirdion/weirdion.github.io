@@ -1,9 +1,11 @@
----
-title: "Automating Unraid Array Decryption"
-categories: ["Unraid", "Encryption", "Automation", "LUKS", "Github"]
-tags: ["unraid", "encryption", "automation", "luks", "github"]
-excerpt: A guide on how to use Unraid boot events
----
++++
+title = "Automating Unraid Array Decryption"
+description = "A guide on how to use Unraid boot events"
+date = 2024-12-28
+categories = ["Unraid", "Encryption", "Automation", "LUKS", "Github"]
+tags = ["unraid", "encryption", "automation", "luks", "github"]
+draft = false
++++
 
 **Disclaimer:** _This is not meant to be start from basics tutorial. The
 following assumes that you are familiar with LUKS encryption and Unraid
@@ -11,7 +13,7 @@ basics._
 
 ## Overview
 
-![Overview diagram showing the use of Start events in Unraid to fetch and use key-file to automatically decrypt the arrays.](/assets/images/2024-12-28-automating-unraid-array-decryption.jpg)
+![Overview diagram showing the use of Start events in Unraid to fetch and use key-file to automatically decrypt the arrays.](featured.jpg)
 
 As an Unraid user, manually entering encryption passwords at every system boot
 can become tedious and inconvenient, especially when your family relies on the

@@ -1,11 +1,11 @@
----
-title: "Optimizing Your Git Config: My Developer Setup"
-description: "A guide to customizing your Git configuration for a cleaner workflow, smarter diffs, and reduced cognitive load."
-date: 2025-04-12
-categories: [git, developer-tools, productivity, github]
-tags: [git, git-config, developer-setup, productivity, workflow, version-control]
-excerpt: "A guide to customizing your Git configuration for a cleaner workflow, smarter diffs, and reduced cognitive load."
----
++++
+title = "Optimizing Your Git Config: My Developer Setup"
+description = "A guide to customizing your Git configuration for a cleaner workflow, smarter diffs, and reduced cognitive load."
+date = 2025-04-12
+categories = ["git", "developer-tools", "productivity", "github"]
+tags = ["git", "git-config", "developer-setup", "productivity", "workflow", "version-control"]
+draft = false
++++
 
 I’ve been a developer for a while now, and I’m still surprised by how many folks stick with Git’s default setup. Sure, the defaults are sensible — they need to be, to work for as many workflows as possible. But they’re also generic by design, and there’s a lot of value in making Git work _your_ way.
 
@@ -14,7 +14,7 @@ I’ve been a developer for a while now, and I’m still surprised by how many f
 - Real-world dev work benefits from opinionated setup
 - Sane defaults =/= optimal settings — defaults aren’t tailored for team workflows, modern branching strategies, or personal preferences
 
-![AI generated image of a desk with a monitor showing .gitconfig with various settings. Around the monitor are sticky notes highlighting the options and a coffee mug.](/assets/images/2025-04-12-optimizing-your-git-config-my-developer-setup.jpg)
+![AI generated image of a desk with a monitor showing .gitconfig with various settings. Around the monitor are sticky notes highlighting the options and a coffee mug.](featured.jpg)
 
 ## The Basics
 

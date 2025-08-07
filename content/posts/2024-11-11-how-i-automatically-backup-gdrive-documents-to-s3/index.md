@@ -25,7 +25,7 @@ OK, let’s get into it…
 
 ## Project Overview
 
-![Architecture Overview](/assets/images/2024-11-11-how-i-automatically-backup-gdrive-documents-to-s3.jpg)
+![Architecture Overview](featured.jpg)
 
 A simple Python script orchestrates the setup configuration and credential
 retrieval, then runs rclone, which performs it’s synchronization between

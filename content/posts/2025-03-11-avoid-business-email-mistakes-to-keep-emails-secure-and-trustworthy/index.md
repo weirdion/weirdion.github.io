@@ -1,9 +1,11 @@
----
-title: "Avoid These Email Mistakes: How to Keep Your Business Emails Secure and Trustworthy"
-categories: ["Email", "Business Email", "Business", "Email Marketting", "Business Hygine", "Email Hygine"]
-tags: ["email", "business-email", "business", "email-marketting", "business-hygine", "email-hygine"]
-excerpt: Misconfiguring business emails can reduce email deliverability, harm the business' reputation and put customers at risk. Simple email hygine can help us prevent that.
---- 
++++
+title = "Avoid These Email Mistakes: How to Keep Your Business Emails Secure and Trustworthy"
+description = "Misconfiguring business emails can reduce email deliverability, harm the business' reputation and put customers at risk. Simple email hygiene can help us prevent that."
+date = 2025-03-11
+categories = ["Email", "Business Email", "Business", "Email Marketting", "Business Hygine", "Email Hygine"]
+tags = ["email", "business-email", "business", "email-marketting", "business-hygine", "email-hygine"]
+draft = false
++++
 
 As a longtime customer of a business I appreciate, I recently received an email from them that raised several security concerns. While the message itself was legitimate, certain issues made it look unprofessional and even suspicious. These types of problems can harm a business' reputation, reduce email deliverability, and even put customers at risk.
 
@@ -27,7 +29,7 @@ Headers have been trimmed to highlight the key parts for the blog.
 
 ### Content
 
-![Screenshot of email content showing a brief message with a View Statement button, followed by details of the clinic.](/assets/images/2025-03-11-avoid-business-email-mistakes-to-keep-emails-secure-and-trustworthy.jpg)
+![Screenshot of email content showing a brief message with a View Statement button, followed by details of the clinic.](featured.jpg)
 
 ## Why is this bad?
 

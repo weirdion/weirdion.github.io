@@ -1,12 +1,14 @@
----
-title: "When Git Branches Diverge: A Troubleshooting Tale"
-categories: ["Git", "Git Branch", "Divergence", "Github", "Software Development"]
-tags: ["git", "git-branch", "git-divergence", "github", "software-development"]
-excerpt: How to troubleshoot, resolve and avoid Git branch divergences effectively.
----
++++
+title = "When Git Branches Diverge: A Troubleshooting Tale"
+description = "How to troubleshoot, resolve and avoid Git branch divergences effectively."
+date = 2025-01-03
+categories = ["Git", "Git Branch", "Divergence", "Github", "Software Development"]
+tags = ["git", "git-branch", "git-divergence", "github", "software-development"]
+draft = false
++++
 
 ![AI generated image of a developer looking for clues in a (git) tree of
-branches](/assets/images/2025-01-03-understanding-git-divergences.jpg)
+branches](featured.jpg)
 
 While working on a project, one morning we came across a fun problem — the
 `develop` branch had diverged. There was no local changes or commits, the last

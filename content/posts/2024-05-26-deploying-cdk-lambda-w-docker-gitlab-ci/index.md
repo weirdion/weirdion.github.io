@@ -7,7 +7,7 @@ tags = ["aws", "cdk", "lambda", "docker", "gitlab-ci"]
 draft = false
 +++
 
-![Image showing Gitlab Docker and Lambda icons](/assets/images/2024-05-26-deploying-cdk-lambda-w-docker-gitlab-ci.jpg)
+![Image showing Gitlab Docker and Lambda icons](featured.jpg)
 
 **Disclaimer:** _This is not meant to be start from basics tutorial. The
 following assumes that you are familiar with CDK and Gitlab-CI concepts.

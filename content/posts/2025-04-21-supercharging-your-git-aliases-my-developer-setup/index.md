@@ -1,11 +1,29 @@
----
-title: "Supercharging Your Git With Aliases: My Developer Setup"
-description: "Git aliases are a powerful way to save time and reduce repetitive typing. Discover how to supercharge your Git workflow with custom shortcuts and power tools."
-date: 2025-04-21
-categories: [git, developer-tools, productivity, github]
-tags: [git, git-config, developer-setup, productivity, workflow, version-control]
-excerpt: "Git aliases are a powerful way to save time and reduce repetitive typing. Discover how to supercharge your Git workflow with custom shortcuts and power tools."
----
++++
+title = "Git Aliases for Developers: 25+ Time-Saving Shortcuts for Your Workflow"
+description = "Boost your Git productivity with 25+ powerful aliases. Learn essential shortcuts, workflow boosters, and power tools that save developers hours every week."
+date = 2025-04-21
+categories = ["git", "developer-tools", "productivity", "github"]
+tags = ["git", "git-config", "developer-setup", "productivity", "workflow", "version-control"]
+draft = false
+canonical = "https://weirdion.github.io/posts/2025-04-21-supercharging-your-git-aliases-my-developer-setup/"
++++
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Git Aliases for Developers: 25+ Time-Saving Shortcuts for Your Workflow",
+  "description": "Boost your Git productivity with 25+ powerful aliases. Learn essential shortcuts, workflow boosters, and power tools that save developers hours every week.",
+  "image": "https://weirdion.github.io/assets/images/2025-04-21-supercharging-your-git-aliases-my-developer-setup.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Ankit Patterson"
+  },
+  "datePublished": "2025-04-21",
+  "mainEntityOfPage": "@id"
+}
+</script>
 
 In my previous post — Optimizing Your Git Config: My Developer Setup, I talked about tuning Git’s
 behavior through `.gitconfig`. Now it’s time to take that a step further — by teaching Git your
@@ -14,7 +32,7 @@ personal shorthand.
 Git aliases are one of the simplest ways to make your workflow faster, smoother, and less
 repetitive. Think of them like custom keybindings — but for Git.
 
-![AI generated image, showing a terminal with git aliases.](/assets/images/2025-04-21-supercharging-your-git-aliases-my-developer-setup.jpg)
+![AI generated image, showing a terminal with git aliases.](featured.jpg)
 
 ## 🧩 The Case for Aliases
 
@@ -389,3 +407,80 @@ If you’re just getting started, copy over a few, and see how you like it. If y
 a custom config, maybe these sparked a few ideas.
 
 Got favorite aliases of your own? Let me know — I’m always down to steal a good one 😄.
+
+## Frequently Asked Questions
+
+### How do I create custom Git aliases?
+Use `git config --global alias.shortname "full command"` or edit your `~/.gitconfig` file directly. Global aliases work across all repositories.
+
+### Can Git aliases call other aliases?
+Yes! You can reference other aliases within aliases, making them composable and powerful.
+
+### Are there any risks with Git aliases?
+Git aliases are safe and only affect your local Git behavior. They can't damage repositories or data.
+
+### How do I see all my Git aliases?
+Use the `aliases` alias from this guide: `git aliases` will list all your configured aliases.
+
+### Can I override default Git commands with aliases?
+No, aliases can't override built-in Git commands, but they can provide alternative shortcuts.
+
+## Essential Git Alias Categories
+
+### 1. **Status and Information Aliases**
+- `s` = status (most used command)
+- `whoami` = show current Git identity
+- `info` = show remote information
+
+### 2. **Branch Management Aliases**  
+- `br` = branch listing
+- `co` = checkout/switch branches
+- `brs` = show all branches with activity
+
+### 3. **Commit and History Aliases**
+- `cm` = commit with message
+- `ca` = amend last commit
+- `lo` = one-line commit graph
+
+### 4. **Advanced Workflow Aliases**
+- `uncommit` = undo last commit (keep changes)
+- `unstage` = remove from staging
+- `abort` = abort rebase safely
+
+## Related Git Optimization Guides
+
+Looking to optimize more than just aliases? Check out my comprehensive guide on [Git configuration best practices](/posts/2025-04-12-optimizing-your-git-config-my-developer-setup/) for settings that improve your entire Git workflow.
+
+For infrastructure developers, see how to handle [Git branch divergences](/posts/2025-01-03-understanding-git-divergences/) when working in teams.
+
+## Start Using These Aliases Today
+
+**Copy and paste this complete alias configuration:**
+
+```ini
+# Add this to your ~/.gitconfig file
+[alias]
+    # Essential shortcuts
+    s = status
+    co = checkout  
+    br = branch
+    cm = commit -m
+    
+    # Workflow boosters  
+    unstage = reset -q HEAD --
+    discard = checkout --
+    uncommit = reset --soft HEAD^
+    
+    # Power tools
+    whoami = "!git config user.name && git config user.email"
+    lo = log --graph --decorate --pretty=oneline --abbrev-commit
+    aliases = "!git config -l | grep alias | cut -c 7-"
+```
+
+**Next steps:**
+1. **Add these aliases** to your `.gitconfig`
+2. **Practice the shortcuts** in your next project  
+3. **Customize further** based on your workflow
+4. **Share with your team** to standardize productivity
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/ankitpatterson/) to share your favorite Git aliases!
