@@ -1,0 +1,4 @@
+/* Increase site title font size */
+.main-menu .text-base {
+  font-size: 1.5rem !important;
+}

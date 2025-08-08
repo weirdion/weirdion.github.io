@@ -1,18 +1,14 @@
 # Default target
-all: install build
-
-# Install dependencies
-install:
-	bundle install --path "vendor/bundle"
+all: build
 
 # Build the site
 build:
-	bundle exec jekyll build
+	hugo
 
 # Serve the site locally
 serve:
-	bundle exec jekyll serve --watch
+	hugo serve -D
 
 # Clean the site
 clean:
-	bundle exec jekyll clean
+	rm -rf public

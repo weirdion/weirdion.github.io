@@ -1,0 +1,26 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "The Tinkering Mind"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "January 2, 2006"
+
+  [params.author]
+  name = "Ankit Patterson"
+  image = "me.jpg"
+  headline = "A developer who likes to build and break things, but with automation."
+  bio = "A tinkerer, coder, and occasional writer."
+
+    [[params.author.links]]
+    github = "https://github.com/weirdion"
+
+    [[params.author.links]]
+    bluesky = "https://bsky.app/profile/weirdion.bsky.social"
+
+    [[params.author.links]]
+    linkedin = "https://linkedin.com/in/ankitpatterson"

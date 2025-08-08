@@ -123,3 +123,11 @@ build-iPhoneSimulator/
 
 # Ignore Gemfile.lock to make Github actions use the latest version of the gem
 Gemfile.lock
+
+# hugo generated files
+/public/
+/resources/
+_site/
+
+# blowfish theme
+themes/blowfish
