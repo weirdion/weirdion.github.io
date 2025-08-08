@@ -9,19 +9,18 @@ displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "January 2, 2006"
-logo = "the-tinkering-mind.png"
 
   [params.author]
   name = "Ankit Patterson"
   image = "me.jpg"
-  headline = "Tinkerer, Coder, Dog Lover"
+  headline = "A developer who likes to build and break things, but with automation."
   bio = "A tinkerer, coder, and occasional writer."
 
     [[params.author.links]]
-    bluesky = "https://bsky.app/profile/weirdion.bsky.social"
+    github = "https://github.com/weirdion"
 
     [[params.author.links]]
-    github = "https://github.com/weirdion"
+    bluesky = "https://bsky.app/profile/weirdion.bsky.social"
 
     [[params.author.links]]
     linkedin = "https://linkedin.com/in/ankitpatterson"

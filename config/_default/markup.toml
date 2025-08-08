@@ -14,7 +14,7 @@
 
 [highlight]
   style = "dracula"
-  lineNos = true
+  lineNos = false
   noClasses = false
 
 [tableOfContents]

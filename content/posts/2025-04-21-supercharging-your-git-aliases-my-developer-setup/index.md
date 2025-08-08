@@ -15,7 +15,6 @@ canonical = "https://weirdion.github.io/posts/2025-04-21-supercharging-your-git-
   "@type": "Article",
   "headline": "Git Aliases for Developers: 25+ Time-Saving Shortcuts for Your Workflow",
   "description": "Boost your Git productivity with 25+ powerful aliases. Learn essential shortcuts, workflow boosters, and power tools that save developers hours every week.",
-  "image": "https://weirdion.github.io/assets/images/2025-04-21-supercharging-your-git-aliases-my-developer-setup.jpg",
   "author": {
     "@type": "Person",
     "name": "Ankit Patterson"

@@ -29,7 +29,7 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "page"
+layout = "profile"
 showRecent = true
 showRecentItems = "10"
 showMoreLink = true

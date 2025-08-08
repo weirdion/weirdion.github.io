@@ -15,7 +15,6 @@ canonical = "https://weirdion.github.io/posts/2025-07-01-why-does-iac-feels-brok
   "@type": "Article",
   "headline": "Why Infrastructure as Code Feels Broken in 2025",
   "description": "Discover why Infrastructure as Code tools like Terraform, CDK, and Pulumi still feel fragile and complex, plus solutions for better IaC workflows.",
-  "image": "https://weirdion.github.io/assets/images/2025-07-01-why-does-iac-feels-broken-in-2025.jpg",
   "author": {
     "@type": "Person",
     "name": "Ankit Patterson"
