@@ -2,8 +2,8 @@
 title = "Avoid These Email Mistakes: How to Keep Your Business Emails Secure and Trustworthy"
 description = "Misconfiguring business emails can reduce email deliverability, harm the business' reputation and put customers at risk. Simple email hygiene can help us prevent that."
 date = 2025-03-11
-categories = ["Email", "Business Email", "Business", "Email Marketting", "Business Hygine", "Email Hygine"]
-tags = ["email", "business-email", "business", "email-marketting", "business-hygine", "email-hygine"]
+categories = ["Email", "Business Email", "Business", "Email Marketing", "Business Hygiene", "Email Hygiene"]
+tags = ["email", "business-email", "business", "email-marketing", "business-hygiene", "email-hygiene"]
 draft = false
 +++
 
