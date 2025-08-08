@@ -8,22 +8,6 @@ draft = false
 canonical = "https://weirdion.github.io/posts/2025-04-21-supercharging-your-git-aliases-my-developer-setup/"
 +++
 
-<!-- Schema.org structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Git Aliases for Developers: 25+ Time-Saving Shortcuts for Your Workflow",
-  "description": "Boost your Git productivity with 25+ powerful aliases. Learn essential shortcuts, workflow boosters, and power tools that save developers hours every week.",
-  "author": {
-    "@type": "Person",
-    "name": "Ankit Patterson"
-  },
-  "datePublished": "2025-04-21",
-  "mainEntityOfPage": "@id"
-}
-</script>
-
 In my previous post — Optimizing Your Git Config: My Developer Setup, I talked about tuning Git’s
 behavior through `.gitconfig`. Now it’s time to take that a step further — by teaching Git your
 personal shorthand.
