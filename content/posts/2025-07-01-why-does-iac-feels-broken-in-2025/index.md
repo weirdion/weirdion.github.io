@@ -8,22 +8,6 @@ draft = false
 canonical = "https://weirdion.github.io/posts/2025-07-01-why-does-iac-feels-broken-in-2025/"
 +++
 
-<!-- Schema.org structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Why Infrastructure as Code Feels Broken in 2025",
-  "description": "Discover why Infrastructure as Code tools like Terraform, CDK, and Pulumi still feel fragile and complex, plus solutions for better IaC workflows.",
-  "author": {
-    "@type": "Person",
-    "name": "Ankit Patterson"
-  },
-  "datePublished": "2025-07-01",
-  "mainEntityOfPage": "@id"
-}
-</script>
-
 I’ve worked with infrastructure in one form or another for years now — from click-ops to CDK, Pulumi, and Terraform. The tooling has definitely evolved, but so has the complexity. And lately, I’ve found myself asking a frustrating question more and more often:
 
 **Why does infrastructure as code still feel so… brittle?**
