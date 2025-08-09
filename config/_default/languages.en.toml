@@ -16,11 +16,9 @@ dateFormat = "January 2, 2006"
   headline = "A developer who likes to build and break things, but with automation."
   bio = "A tinkerer, coder, and occasional writer."
 
-    [[params.author.links]]
+  [[params.author.links]]
     github = "https://github.com/weirdion"
-
-    [[params.author.links]]
+  [[params.author.links]]
     bluesky = "https://bsky.app/profile/weirdion.bsky.social"
-
-    [[params.author.links]]
+  [[params.author.links]]
     linkedin = "https://linkedin.com/in/ankitpatterson"
