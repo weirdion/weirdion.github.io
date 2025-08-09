@@ -6,27 +6,35 @@ weight = 10
 [[main]]
 name = "Posts"
 pageRef = "posts"
-weight = 10
+weight = 20
 
 [[main]]
 pre = "bluesky"
 url = "https://bsky.app/profile/weirdion.bsky.social"
 identifier = "QMrAhbanbr"
-weight = 9_999
+weight = 50
 
 [[main]]
 pre = "github"
 url = "https://github.com/weirdion"
 identifier = "DMxHV1FiWw"
-weight = 9_999
+weight = 30
 
 [[main]]
 pre = "linkedin"
 url = "https://linkedin.com/in/ankitpatterson"
 identifier = "gNXC3L3WwT"
-weight = 9_999
+weight = 40
 
 [[footer]]
   name = "Tags"
+  pre = "tag"
   pageRef = "tags"
   weight = 10
+
+[[footer]]
+pre = "rss"
+name = "RSS"
+url = "https://weirdion.github.io/posts/index.xml"
+identifier = "QMrAhbanbrs"
+weight = 100
