@@ -35,6 +35,6 @@ weight = 40
 [[footer]]
 pre = "rss"
 name = "RSS"
-url = "https://weirdion.github.io/posts/index.xml"
+url = "/posts/index.xml"
 identifier = "QMrAhbanbrs"
 weight = 100
