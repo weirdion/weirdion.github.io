@@ -2,7 +2,7 @@
 
 Personal blog
 
-- Live site: https://blog.weirdion.com
+- Live site: https://weirdion.com
 - Theme: [`themes/blowfish`](./themes/blowfish) (git submodule)
 - Built with [Hugo](https://gohugo.io/), and the [Blowfish](https://blowfish.page/) theme.
 

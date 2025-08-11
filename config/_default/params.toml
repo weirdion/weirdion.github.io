@@ -9,14 +9,6 @@ disableImageOptimization = false
 disableImageOptimizationMD = false
 disableTextInHeader = false
 fingerprintAlgorithm = "sha512"
-firebase = { }
-fathomAnalytics = { }
-umamiAnalytics = { }
-selineAnalytics = { }
-buymeacoffee = { }
-verification = { }
-rssnext = { }
-advertisement = { }
 
 [header]
 layout = "fixed-fill-blur"
@@ -102,3 +94,10 @@ showTableOfContents = true
 groupByYear = false
 cardView = false
 cardViewScreenWidth = false
+
+[umamiAnalytics]
+websiteid = "4c2dcfe1-51d0-49a8-8446-8550909b7c3e"
+domain = "cloud.umami.is"
+#dataDomains = "yoursite.com,yoursite2.com"
+scriptName = "script.js"
+enableTrackEvent = true
