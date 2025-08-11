@@ -1,4 +1,4 @@
-baseURL = "https://weirdion.github.io"
+baseURL = "https://blog.weirdion.com"
 languageCode = "en-us"
 theme = "blowfish"
 
@@ -19,8 +19,6 @@ enableEmoji = true
 [taxonomies]
   tag = "tags"
   category = "categories"
-  author = "authors"
-  series = "series"
 
 [sitemap]
   changefreq = 'daily'

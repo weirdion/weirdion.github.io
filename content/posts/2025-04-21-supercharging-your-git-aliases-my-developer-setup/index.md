@@ -5,7 +5,7 @@ date = 2025-04-21
 categories = ["git", "developer-tools", "productivity", "github"]
 tags = ["git", "git-config", "developer-setup", "productivity", "workflow", "version-control"]
 draft = false
-canonical = "https://weirdion.github.io/posts/2025-04-21-supercharging-your-git-aliases-my-developer-setup/"
+canonical = "https://blog.weirdion.com/posts/2025-04-21-supercharging-your-git-aliases-my-developer-setup/"
 +++
 
 In my previous post — Optimizing Your Git Config: My Developer Setup, I talked about tuning Git’s

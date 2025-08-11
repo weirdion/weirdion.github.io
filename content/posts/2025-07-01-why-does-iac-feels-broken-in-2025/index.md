@@ -5,7 +5,7 @@ date = 2025-07-01
 categories = ["Infrastructure", "AWS", "Cloud", "DevOps"]
 tags = ["iac", "aws", "cdk", "terraform", "pulumi", "cloud", "devops", "multi-cloud", "state-management"]
 draft = false
-canonical = "https://weirdion.github.io/posts/2025-07-01-why-does-iac-feels-broken-in-2025/"
+canonical = "https://blog.weirdion.com/posts/2025-07-01-why-does-iac-feels-broken-in-2025/"
 +++
 
 I’ve worked with infrastructure in one form or another for years now — from click-ops to CDK, Pulumi, and Terraform. The tooling has definitely evolved, but so has the complexity. And lately, I’ve found myself asking a frustrating question more and more often:
