@@ -1,5 +1,7 @@
 # The Tinkering Mind
 
+[![Deploy Hugo site to GitHub Pages](https://github.com/weirdion/weirdion.github.io/actions/workflows/deploy-gh-pages.yml/badge.svg)](https://github.com/weirdion/weirdion.github.io/actions/workflows/deploy-gh-pages.yml)
+
 Personal blog
 
 - Live site: https://weirdion.com
