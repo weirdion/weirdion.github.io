@@ -1,30 +1,30 @@
 [[main]]
-name = "Home"
-url = "/"
-weight = 10
+  name = "Home"
+  url = "/"
+  weight = 10
 
 [[main]]
-name = "Posts"
-pageRef = "posts"
-weight = 20
+  name = "Posts"
+  pageRef = "posts"
+  weight = 20
 
 [[main]]
-pre = "bluesky"
-url = "https://bsky.app/profile/weirdion.bsky.social"
-identifier = "QMrAhbanbr"
-weight = 50
+  pre = "bluesky"
+  url = "https://bsky.app/profile/weirdion.bsky.social"
+  identifier = "QMrAhbanbr"
+  weight = 50
 
 [[main]]
-pre = "github"
-url = "https://github.com/weirdion"
-identifier = "DMxHV1FiWw"
-weight = 30
+  pre = "github"
+  url = "https://github.com/weirdion"
+  identifier = "DMxHV1FiWw"
+  weight = 30
 
 [[main]]
-pre = "linkedin"
-url = "https://linkedin.com/in/ankitpatterson"
-identifier = "gNXC3L3WwT"
-weight = 40
+  pre = "linkedin"
+  url = "https://linkedin.com/in/ankitpatterson"
+  identifier = "gNXC3L3WwT"
+  weight = 40
 
 [[footer]]
   name = "Tags"
@@ -33,8 +33,8 @@ weight = 40
   weight = 10
 
 [[footer]]
-pre = "rss"
-name = "RSS"
-url = "/posts/index.xml"
-identifier = "QMrAhbanbrs"
-weight = 100
+  pre = "rss"
+  name = "RSS"
+  url = "/posts/index.xml"
+  identifier = "QMrAhbanbrs"
+  weight = 100

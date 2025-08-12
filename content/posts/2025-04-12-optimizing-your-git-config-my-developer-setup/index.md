@@ -4,6 +4,7 @@ description = "A guide to customizing your Git configuration for a cleaner workf
 date = 2025-04-12
 categories = ["git", "developer-tools", "productivity", "github"]
 tags = ["git", "git-config", "developer-setup", "productivity", "workflow", "version-control"]
+layout = "simple"
 draft = false
 +++
 

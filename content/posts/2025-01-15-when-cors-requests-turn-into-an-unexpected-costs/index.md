@@ -4,6 +4,7 @@ description = "How CORS requests can unexpectedly increase your API Gateway cost
 date = 2025-01-15
 categories = ["AWS", "Cloud Architecture", "API Gateway", "Cloud Cost Optimization", "Software Architecture"]
 tags = ["aws", "cloud-architecture", "api-gateway", "cloud-cost-optimization", "software-architecture"]
+layout = "simple"
 draft = false
 +++
 

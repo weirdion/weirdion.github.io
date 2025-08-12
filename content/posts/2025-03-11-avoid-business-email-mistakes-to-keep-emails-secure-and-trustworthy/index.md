@@ -4,6 +4,7 @@ description = "Misconfiguring business emails can reduce email deliverability, h
 date = 2025-03-11
 categories = ["Email", "Business Email", "Business", "Email Marketing", "Business Hygiene", "Email Hygiene"]
 tags = ["email", "business-email", "business", "email-marketing", "business-hygiene", "email-hygiene"]
+layout = "simple"
 draft = false
 +++
 

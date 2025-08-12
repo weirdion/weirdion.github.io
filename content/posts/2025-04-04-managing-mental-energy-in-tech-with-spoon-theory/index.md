@@ -4,6 +4,7 @@ description = "How to use Spoon Theory to manage mental energy while working in 
 date = 2025-04-04
 categories = ["mental-health", "productivity", "work-life-balance", "tech-culture", "burnout"]
 tags = ["mental health", "burnout", "remote work", "tech industry", "productivity tips", "spoon theory", "work-life balance"]
+layout = "simple"
 draft = false
 +++
 

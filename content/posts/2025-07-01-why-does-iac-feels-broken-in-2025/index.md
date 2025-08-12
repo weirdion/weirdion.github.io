@@ -4,6 +4,7 @@ description = "Discover why Infrastructure as Code tools like Terraform, CDK, an
 date = 2025-07-01
 categories = ["Infrastructure", "AWS", "Cloud", "DevOps"]
 tags = ["iac", "aws", "cdk", "terraform", "pulumi", "cloud", "devops", "multi-cloud", "state-management"]
+layout = "simple"
 draft = false
 canonical = "https://weirdion.com/posts/2025-07-01-why-does-iac-feels-broken-in-2025/"
 +++

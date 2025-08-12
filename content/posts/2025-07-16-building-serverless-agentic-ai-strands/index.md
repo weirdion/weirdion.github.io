@@ -4,6 +4,7 @@ description = "How to build and deploy a scalable, serverless agentic AI REST AP
 date = 2025-07-16
 categories = ["Strands", "AWS", "Cloud", "Agentic AI", "GenAI", "AI", "IaC", "Infrastructure as Code", "Serverless", "Bedrock"]
 tags = ["strands-sdk", "lambda", "api-gateway", "bedrock", "claude", "python", "typescript", "cdk", "rest-api", "lambda-layers"]
+layout = "simple"
 draft = false
 +++
 

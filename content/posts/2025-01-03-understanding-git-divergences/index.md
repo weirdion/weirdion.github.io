@@ -4,6 +4,7 @@ description = "How to troubleshoot, resolve and avoid Git branch divergences eff
 date = 2025-01-03
 categories = ["Git", "Git Branch", "Divergence", "Github", "Software Development"]
 tags = ["git", "git-branch", "git-divergence", "github", "software-development"]
+layout = "simple"
 draft = false
 +++
 

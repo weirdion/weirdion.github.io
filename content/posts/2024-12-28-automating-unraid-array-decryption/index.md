@@ -4,6 +4,7 @@ description = "A guide on how to use Unraid boot events"
 date = 2024-12-28
 categories = ["Unraid", "Encryption", "Automation", "LUKS", "Github"]
 tags = ["unraid", "encryption", "automation", "luks", "github"]
+layout = "simple"
 draft = false
 +++
 

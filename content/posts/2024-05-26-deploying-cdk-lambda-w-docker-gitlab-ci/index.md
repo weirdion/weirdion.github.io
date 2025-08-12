@@ -4,6 +4,7 @@ description = "A guide on deploying AWS CDK Lambda functions using Docker and Gi
 date = 2024-05-26
 categories = ["AWS", "AWS CDK", "Lambda", "Docker", "GitLab CI"]
 tags = ["aws", "cdk", "lambda", "docker", "gitlab-ci"]
+layout = "simple"
 draft = false
 +++
 

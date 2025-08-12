@@ -4,6 +4,7 @@ description = "Boost your Git productivity with 25+ powerful aliases. Learn esse
 date = 2025-04-21
 categories = ["git", "developer-tools", "productivity", "github"]
 tags = ["git", "git-config", "developer-setup", "productivity", "workflow", "version-control"]
+layout = "simple"
 draft = false
 canonical = "https://weirdion.com/posts/2025-04-21-supercharging-your-git-aliases-my-developer-setup/"
 +++

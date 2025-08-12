@@ -1,0 +1,24 @@
+{{ with .Params.sharingLinks | default (.Site.Params.article.sharingLinks | default false) }}
+  {{ $links := site.Data.sharing }}
+  <section class="flex flex-col items-center pt-4 text-xl">
+    <span class="mb-2 text-sm text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide">
+      {{ i18n "article.share" | default "Share:" }}
+    </span>
+    <div class="flex flex-row flex-wrap justify-center">
+      {{ range . }}
+        {{ with index $links . }}
+          <a
+            target="_blank"
+            class="m-1 flex flex-col items-center rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+            href="{{ printf .url $.Permalink $.Title }}"
+            title="{{ i18n .title }}"
+            aria-label="{{ i18n .title }}">
+            {{ partial "icon.html" .icon }}
+            <span class="text-xs mt-1">{{ i18n .title }}</span>
+          </a>
+        {{ end }}
+      {{ end }}
+
+    </div>
+  </section>
+{{ end }}

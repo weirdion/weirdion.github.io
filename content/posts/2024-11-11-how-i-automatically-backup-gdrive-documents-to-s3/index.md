@@ -4,6 +4,7 @@ description = "How to automate the backup of Google Drive documents to Amazon S3
 date = 2024-11-11
 categories = ["Disaster Recovery", "AWS", "Python", "Rclone", "Backup"]
 tags = ["disaster-recovery", "aws", "python", "rclone", "backup"]
+layout = "simple"
 draft = false
 +++
 
