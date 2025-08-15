@@ -30,6 +30,8 @@ to show you how they help.
 
 And as always, if you want to grab-and-go, copy-paste away my friends.
 
+{{< subscribe >}}
+
 ```ini
 [alias]
     # Essential Shorthands
@@ -468,3 +470,5 @@ For infrastructure developers, see how to handle [Git branch divergences](/posts
 4. **Share with your team** to standardize productivity
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/ankitpatterson/) to share your favorite Git aliases!
+
+{{< subscribe >}}

@@ -32,6 +32,8 @@ retrieve it temporarily on boot for decryption.
   * Leverages Unraid’s event system for reliable automation
   * Balances security with convenience while following best practices
 
+{{< subscribe >}}
+
 # The Implementation
 
 ## Setting up a new LUKS Key-file
@@ -167,4 +169,4 @@ secure backups of your encryption credentials.
 _I’m trying to get better about writing about things I do. Let me know if you
 found this useful_ 🙂 _._
 
- _Connect with me on_ [_LinkedIn_](https://www.linkedin.com/in/ankitpatterson/) _._
+{{< subscribe >}}

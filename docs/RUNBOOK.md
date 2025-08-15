@@ -67,6 +67,18 @@ FYI
 - Custom CSS: [`assets/css/custom.css`](../assets/css/custom.css) is bundled via Hugo Pipes.
 - Icons & favicons: see partial override [`layouts/partials/favicons.html`](../layouts/partials/favicons.html) and icon files under [`static/`](../static/).
 
+## Analytics
+- Umami is set up for collecting privacy-friendly analytics to understand user traffic.
+- The config is set up in [`config/_default/params.toml`](../config/_default/params.toml)
+- The tracking script is included in the theme header, no custom overrides.
+
+## Email subscribe and newsletter
+- Email newsletter is managed with [Email Octopus](https://emailoctopus.com/).
+- The subscribe form is embedded using the script provided by Email Octopus.
+- The form is included in the sidebar via the shortcode in [`layouts/shortcodes/subscribe.html`](../layouts/shortcodes/subscribe.html).
+- To include the subscribe form in posts, use the shortcode `{{< subscribe >}}` in the post content.
+
+
 ## Menus and metadata
 
 - Site title/author: [`config/_default/languages.en.toml`](../config/_default/languages.en.toml)

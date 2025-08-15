@@ -55,6 +55,8 @@ Access-Control-Max-Age: 300
 
 * Browser sends the actual request
 
+{{< subscribe >}}
+
 ## Why This Matters 💰
 
 Here's the kicker - in this dance, you've made TWO API Gateway requests:
@@ -203,3 +205,5 @@ Monitoring Tip: Keep an on your API Gateway metrics to track those OPTIONS reque
  _Connect with me on_ [_LinkedIn_](https://www.linkedin.com/in/ankitpatterson/) _._
 
 [AWS Docs - API Gateway CORS Request Types]: <https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html#apigateway-cors-request-types>
+
+{{< subscribe >}}

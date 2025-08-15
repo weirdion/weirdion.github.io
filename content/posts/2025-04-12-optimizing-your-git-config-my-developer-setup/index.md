@@ -62,6 +62,8 @@ When you run any of the commands, the commands are stored like this —
 
 This is more copy-paste friendly, so I’m going to use this for the rest of the article.
 
+{{< subscribe >}}
+
 # Making Workflow Improvements
 
 If you are just here for copy-paste solution, here is the consolidated improvements.
@@ -434,3 +436,5 @@ This post didn’t even touch **git aliases** (which deserve their own spotlig
 If you have any favorite Git config settings I didn’t cover, I’d love to hear them. Or if you’re curious about how to craft a legendary `.gitconfig` alias section, stay tuned for part two. 👀
 
 Happy committing! ✨
+
+{{< subscribe >}}

@@ -24,6 +24,8 @@ Imagine you have 12 spoons in your hands. Every meaningful action you takeâ€Š-â€
 
 Now, imagine your co-workers  don't see these spoons. They think you have the same mental energy as they do and keep asking you for more. You feel pressure to push through, even though you know you're running on empty. Where does more spoons to fill the gap come from? You borrow from your personal life and give it to your work instead. That's the invisible drain.
 
+{{< subscribe >}}
+
 ## The Hidden Costs
 
 The tech industry demands a lot of mental energy, and many of those energy drains go unseen or unacknowledged.
@@ -91,3 +93,5 @@ We are not one-dimensional characters whose sole purpose is to build and ship pr
 In tech, where the demand for mental effort is relentless, understanding our limits is crucial for long-term sustainability. Whether you're coding, managing, or just trying to survive another sprint, remember: **your spoons matter**.
 
 If you haven't read it, I highly recommend reading the original [Spoon Theory by Christine Miserandino](https://butyoudontlooksick.com/articles/written-by-christine/the-spoon-theory/).
+
+{{< subscribe >}}

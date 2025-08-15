@@ -55,6 +55,8 @@ Ok, now let’s get this deployed into an API.
 
 If you just need the code: [http://github.com/weirdion/strands-agent-example](http://github.com/weirdion/strands-agent-example)
 
+{{< subscribe >}}
+
 ### The Approach: Serverless, Layered, and Maintainable
 
 Here’s what worked for me:
@@ -453,3 +455,5 @@ While Strands SDK definitely has a few rough edges, it appears to be a promising
 I think the next step is to create a session based separation like how logged in users would interact with it, maybe try to maintain their history and state.
 
 **In the meantime, don’t forget to** `cdk destroy` **your stack once you are done experimenting.**
+
+{{< subscribe >}}
