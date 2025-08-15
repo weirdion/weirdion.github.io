@@ -55,6 +55,8 @@ fingerprintAlgorithm = "sha512"
   showCategoryOnly = false
   showAuthorsBadges = true
   showWordCount = true
+  showRelatedContent = true
+  relatedContentLimit = 3
   sharingLinks = ["bluesky", "linkedin", "reddit", "email"]
   showZenMode = true
 

@@ -34,6 +34,8 @@ Google Drive and S3 Bucket. For added convenience, the entire operation is
 scheduled to run as a GitHub workflow, ensuring regular backups with minimal
 user intervention, but we can circle back to that.
 
+{{< subscribe >}}
+
 ## Key Components
 
  **RClone reads from Google Drive** :
@@ -166,3 +168,5 @@ issue!_
 found this useful_ 🙂 _._
 
  _Connect with me on_ [_LinkedIn_](https://www.linkedin.com/in/ankitpatterson/) _._
+
+{{< subscribe >}}

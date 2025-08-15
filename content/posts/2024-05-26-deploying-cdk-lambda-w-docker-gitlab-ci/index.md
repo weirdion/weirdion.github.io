@@ -36,6 +36,8 @@ which allows us to use a base image with the right dependencies to build a docke
 
 Talk is cheap, show me the code!
 
+{{< subscribe >}}
+
 # Basic Lambda (non-Docker)
 
 OK, enough background, let’s get started with a basic Python Lambda with CDK
@@ -291,3 +293,5 @@ This makes the CDK diff and deploy re-create
 all docker layers on each execution, increasing our build times.
 If we can leverage `--cache-from` build argument in CDK image building, we can
 reduce those times down.
+
+{{< subscribe >}}

@@ -28,6 +28,8 @@ Authentication-Results:
 ```
 Headers have been trimmed to highlight the key parts for the blog.
 
+{{< subscribe >}}
+
 ### Content
 
 ![Screenshot of email content showing a brief message with a View Statement button, followed by details of the clinic.](featured.jpg)
@@ -122,3 +124,5 @@ FTC Compliance Guide: [CAN-SPAM Act](https://www.ftc.gov/business-guidance/resou
 Email security issues can make even legitimate businesses look untrustworthy. By taking steps to authenticate emails, align sender domains, and ensure compliance with best practices, you can improve email deliverability and maintain customer trust.
 
 If your business relies on email for communication, now is a great time to review your settings and make any necessary adjustments. A few small changes can go a long way in ensuring your emails reach your customers — and don’t end up in spam!
+
+{{< subscribe >}}
