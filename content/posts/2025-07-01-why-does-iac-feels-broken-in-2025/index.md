@@ -40,8 +40,6 @@ That’s not abstraction — it’s conditional logic.
 
 **The result?** Codebases become brittle, hard to test, and difficult to scale across environments.
 
-{{< subscribe >}}
-
 ### **🗃️ State Management Is Still Fragile**
 
 Remote state is powerful — and also a pain.
@@ -212,5 +210,3 @@ I’m not here to trash the tools. Every one of them — CDK, Pulumi, Terraform 
 If you’ve been there too — I see you.
 
 Maybe the next era of infrastructure isn’t just “more tools,” but **better ones**, built with empathy for the people who live in these trenches every day.
-
-{{< subscribe >}}
