@@ -8,7 +8,6 @@ Personal blog
 - Theme: [`themes/blowfish`](./themes/blowfish) (git submodule)
 - Built with [Hugo](https://gohugo.io/), and the [Blowfish](https://blowfish.page/) theme.
 - Site uses [Umami](https://umami.is/) hosted in the US.
-- Email newsletter is generated with [Email Octopus](https://emailoctopus.com/).
 
 ## Quick start
 
