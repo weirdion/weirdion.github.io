@@ -1,9 +1,11 @@
 +++
-title = "Automating Unraid Array Decryption"
-description = "A guide on how to use Unraid boot events"
+title = "Automating Unraid Array Decryption with GitHub Key Storage"
+description = "Step-by-step guide to automatically decrypt Unraid arrays at boot using LUKS, GitHub private repo, and Unraid event hooks for secure automation."
+summary = "Learn how to automate Unraid array decryption at startup with a secure workflow using LUKS key-files, GitHub private repos, and Unraid boot events."
+categories = ["Unraid", "Data Security", "Linux Automation", "Encryption", "Homelab"]
+tags = ["unraid", "encryption", "automation", "luks", "github", "homelab", "linux"]
+feature = "featured.jpg"
 date = 2024-12-28
-categories = ["Unraid", "Encryption", "Automation", "LUKS", "Github"]
-tags = ["unraid", "encryption", "automation", "luks", "github"]
 layout = "simple"
 draft = false
 +++
@@ -166,5 +168,3 @@ secure backups of your encryption credentials.
 
 _I’m trying to get better about writing about things I do. Let me know if you
 found this useful_ 🙂 _._
-
- _Connect with me on_ [_LinkedIn_](https://www.linkedin.com/in/ankitpatterson/) _._

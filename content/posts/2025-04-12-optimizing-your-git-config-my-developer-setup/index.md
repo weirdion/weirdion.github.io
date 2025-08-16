@@ -1,9 +1,11 @@
 +++
 title = "Optimizing Your Git Config: My Developer Setup"
-description = "A guide to customizing your Git configuration for a cleaner workflow, smarter diffs, and reduced cognitive load."
+description = "Practical guide to customizing your Git config for better diffs, cleaner history, smarter workflows, and less cognitive load."
+summary = "Customize your Git configuration to match modern workflows. Learn how to enable smarter diffs, cleaner history, automatic branch setup, and productivity boosts that save time every day."
 date = 2025-04-12
-categories = ["git", "developer-tools", "productivity", "github"]
-tags = ["git", "git-config", "developer-setup", "productivity", "workflow", "version-control"]
+categories = ["Git", "Developer Tools", "Productivity", "Version Control"]
+tags = ["git", "git-config", "developer-setup", "productivity", "workflow-optimization", "cli", "version-control"]
+feature = "featured.jpg"
 layout = "simple"
 draft = false
 +++

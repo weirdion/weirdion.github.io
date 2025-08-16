@@ -1,9 +1,11 @@
 +++
-title = "Deploying CDK Lambda with Docker and Gitlab CI"
-description = "A guide on deploying AWS CDK Lambda functions using Docker and GitLab CI."
+title = "Deploying AWS CDK Lambda with Docker & GitLab CI"
+description = "Step-by-step guide to deploying AWS CDK Lambda functions with Docker-in-Docker on GitLab CI, including setup, authentication, and common pitfalls."
+summary = "Learn how to deploy AWS CDK Lambda functions using Docker-in-Docker inside GitLab CI. Covers setup, authentication with OpenID Connect, and handling Python dependencies with Poetry."
+feature = "featured.jpg"
 date = 2024-05-26
-categories = ["AWS", "AWS CDK", "Lambda", "Docker", "GitLab CI"]
-tags = ["aws", "cdk", "lambda", "docker", "gitlab-ci"]
+categories = ["AWS", "AWS CDK", "Lambda", "Docker", "GitLab CI", "Cloud", "CI/CD"]
+tags = ["aws", "cdk", "lambda", "docker", "gitlab-ci", "ci-cd", "devops"]
 layout = "simple"
 draft = false
 +++

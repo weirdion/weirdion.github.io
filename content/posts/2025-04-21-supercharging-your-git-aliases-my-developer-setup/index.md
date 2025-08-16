@@ -1,12 +1,13 @@
 +++
 title = "Git Aliases for Developers: 25+ Time-Saving Shortcuts for Your Workflow"
-description = "Boost your Git productivity with 25+ powerful aliases. Learn essential shortcuts, workflow boosters, and power tools that save developers hours every week."
+description = "Discover 25+ powerful Git aliases that streamline everyday workflows. From commits to branching to history visualization, these shortcuts save developers time and reduce friction."
+summary = "Level up your Git productivity with over 25 aliases for faster commits, smarter branching, quick history exploration, and developer-friendly power tools."
 date = 2025-04-21
-categories = ["git", "developer-tools", "productivity", "github"]
-tags = ["git", "git-config", "developer-setup", "productivity", "workflow", "version-control"]
+categories = ["Git", "Developer Tools", "Productivity", "Version Control"]
+tags = ["git-aliases", "git-config", "workflow-optimization", "developer-setup", "productivity", "version-control", "shortcuts", "cli"]
 layout = "simple"
 draft = false
-canonical = "https://weirdion.com/posts/2025-04-21-supercharging-your-git-aliases-my-developer-setup/"
+feature = "featured.jpg"
 +++
 
 In my previous post — Optimizing Your Git Config: My Developer Setup, I talked about tuning Git’s
@@ -466,5 +467,3 @@ For infrastructure developers, see how to handle [Git branch divergences](/posts
 2. **Practice the shortcuts** in your next project  
 3. **Customize further** based on your workflow
 4. **Share with your team** to standardize productivity
-
-Connect with me on [LinkedIn](https://www.linkedin.com/in/ankitpatterson/) to share your favorite Git aliases!

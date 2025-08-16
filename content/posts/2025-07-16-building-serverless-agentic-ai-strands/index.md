@@ -1,9 +1,11 @@
 +++
-title = "Building a Serverless Agentic AI with Strands and AWS"
-description = "How to build and deploy a scalable, serverless agentic AI REST API using the AWS Strands SDK, Bedrock, Lambda, and CDK."
+title = "Building a Serverless Agentic AI on AWS with Strands SDK"
+description = "Step-by-step guide to building and deploying a scalable serverless agentic AI REST API using AWS Strands SDK, Amazon Bedrock, Lambda, and CDK."
+summary = "Learn how to deploy a production-ready serverless AI agent on AWS using the Strands SDK with Lambda, API Gateway, Bedrock, and CDK. Includes architecture, code, and cost breakdown."
 date = 2025-07-16
-categories = ["Strands", "AWS", "Cloud", "Agentic AI", "GenAI", "AI", "IaC", "Infrastructure as Code", "Serverless", "Bedrock"]
-tags = ["strands-sdk", "lambda", "api-gateway", "bedrock", "claude", "python", "typescript", "cdk", "rest-api", "lambda-layers"]
+categories = ["AWS", "Serverless", "AI Agents", "Agentic AI", "Infrastructure as Code", "Cloud"]
+tags = ["strands-sdk", "aws-lambda", "api-gateway", "amazon-bedrock", "claude", "python", "typescript", "cdk", "serverless-ai", "lambda-layers"]
+feature = "featured.jpg"
 layout = "simple"
 draft = false
 +++

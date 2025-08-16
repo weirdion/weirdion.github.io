@@ -1,9 +1,11 @@
 +++
-title = "When CORS Requests Turn into an Unexpected Costs at Your API Gateway"
-description = "How CORS requests can unexpectedly increase your API Gateway costs, and strategies to optimize your architecture and expenses."
+title = "When CORS Requests Turn Into Unexpected API Gateway Costs (and How to Fix It)"
+description = "CORS preflight requests can silently double your AWS API Gateway costs. Learn why this happens and practical strategies to optimize architecture, caching, and routing to cut costs."
+summary = "Cross-Origin Resource Sharing (CORS) can result in hidden AWS API Gateway charges when every request triggers a preflight. This post explains why and shows how to use CloudFront, caching, path-based routing, and smart API design to reduce costs."
+categories = ["AWS", "Serverless", "Cloud Architecture", "Cost Optimization", "API Gateway"]
+tags = ["cors", "api-gateway", "aws", "serverless", "cloud-cost-optimization", "cloudfront", "architecture", "caching", "api-design"]
+feature = "featured.jpg"
 date = 2025-01-15
-categories = ["AWS", "Cloud Architecture", "API Gateway", "Cloud Cost Optimization", "Software Architecture"]
-tags = ["aws", "cloud-architecture", "api-gateway", "cloud-cost-optimization", "software-architecture"]
 layout = "simple"
 draft = false
 +++
@@ -199,7 +201,5 @@ Monitoring Tip: Keep an on your API Gateway metrics to track those OPTIONS reque
 ---
 
  Feedback is always welcome!
-
- _Connect with me on_ [_LinkedIn_](https://www.linkedin.com/in/ankitpatterson/) _._
 
 [AWS Docs - API Gateway CORS Request Types]: <https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html#apigateway-cors-request-types>

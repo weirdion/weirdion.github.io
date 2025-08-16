@@ -1,12 +1,13 @@
 +++
-title = "Why Infrastructure as Code Feels Broken in 2025"
-description = "Discover why Infrastructure as Code tools like Terraform, CDK, and Pulumi still feel fragile and complex, plus solutions for better IaC workflows."
+title = "Why Infrastructure as Code Feels Broken in 2025 (and How We Can Fix It)"
+description = "An in-depth analysis of why Infrastructure as Code tools like Terraform, CDK, and Pulumi still feel fragile in 2025, and what could make IaC more resilient."
+summary = "Infrastructure as Code promised simplicity, but in 2025, many teams still struggle with brittle state, slow feedback loops, and tool drift. Here’s why IaC feels broken today and how the next generation of tooling could improve it."
 date = 2025-07-01
-categories = ["Infrastructure", "AWS", "Cloud", "DevOps"]
-tags = ["iac", "aws", "cdk", "terraform", "pulumi", "cloud", "devops", "multi-cloud", "state-management"]
+categories = ["Infrastructure as Code", "Cloud", "DevOps", "Engineering Practices"]
+tags = ["iac", "terraform", "cdk", "pulumi", "cloud-computing", "devops", "state-management", "infrastructure", "governance", "tooling"]
 layout = "simple"
 draft = false
-canonical = "https://weirdion.com/posts/2025-07-01-why-does-iac-feels-broken-in-2025/"
+feature = "featured.jpg"
 +++
 
 I’ve worked with infrastructure in one form or another for years now — from click-ops to CDK, Pulumi, and Terraform. The tooling has definitely evolved, but so has the complexity. And lately, I’ve found myself asking a frustrating question more and more often:

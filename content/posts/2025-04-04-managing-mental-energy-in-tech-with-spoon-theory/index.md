@@ -1,9 +1,11 @@
 +++
-title = "Managing Mental Energy in Tech with Spoon Theory"
-description = "How to use Spoon Theory to manage mental energy while working in tech."
+title = "Managing Mental Energy in Tech with Spoon Theory: Avoiding Burnout"
+description = "A practical guide to applying Spoon Theory to manage mental energy, reduce burnout, and set healthy boundaries while working in tech."
+summary = "Tech culture demands constant output, but our mental energy is finite. Learn how Spoon Theory helps developers and engineers manage spoons, avoid burnout, and build sustainable careers."
+categories = ["Mental Health", "Productivity", "Work-Life Balance", "Tech Culture", "Burnout"]
+tags = ["mental-health", "burnout", "remote-work", "tech-industry", "productivity", "spoon-theory", "work-life-balance", "boundaries", "wellness"]
+feature = "featured.jpg"
 date = 2025-04-04
-categories = ["mental-health", "productivity", "work-life-balance", "tech-culture", "burnout"]
-tags = ["mental health", "burnout", "remote work", "tech industry", "productivity tips", "spoon theory", "work-life balance"]
 layout = "simple"
 draft = false
 +++

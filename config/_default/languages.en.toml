@@ -22,3 +22,5 @@ dateFormat = "January 2, 2006"
     bluesky = "https://bsky.app/profile/weirdion.bsky.social"
   [[params.author.links]]
     linkedin = "https://linkedin.com/in/ankitpatterson"
+  [[params.author.links]]
+    medium = "https://medium.com/@weirdion"

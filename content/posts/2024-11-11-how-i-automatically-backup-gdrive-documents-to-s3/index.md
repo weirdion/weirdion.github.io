@@ -1,9 +1,11 @@
 +++
-title = "How I automatically backup Google Drive documents to Amazon S3 Glacier IR"
-description = "How to automate the backup of Google Drive documents to Amazon S3 Glacier IR using Python and rclone."
+title = "Automating Google Drive Backups to Amazon S3 Glacier IR"
+description = "Step-by-step guide to securely automate Google Drive backups to Amazon S3 Glacier Instant Retrieval using Python, rclone, and GitHub Actions."
+summary = "Learn how to automatically back up Google Drive documents to Amazon S3 Glacier IR with a secure, cost-efficient workflow powered by Python, rclone, and GitHub Actions."
 date = 2024-11-11
-categories = ["Disaster Recovery", "AWS", "Python", "Rclone", "Backup"]
-tags = ["disaster-recovery", "aws", "python", "rclone", "backup"]
+categories = ["Cloud Backup", "AWS", "Google Drive", "Python", "Automation"]
+tags = ["cloud-backup", "aws", "google-drive", "python", "rclone", "automation", "github-actions"]
+feature = "featured.jpg"
 layout = "simple"
 draft = false
 +++
@@ -164,5 +166,3 @@ issue!_
 
  _I’m trying to get better about writing about things I do. Let me know if you
 found this useful_ 🙂 _._
-
- _Connect with me on_ [_LinkedIn_](https://www.linkedin.com/in/ankitpatterson/) _._
