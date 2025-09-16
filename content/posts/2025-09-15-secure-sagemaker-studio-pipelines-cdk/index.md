@@ -354,4 +354,6 @@ These caught me during iteration; here’s how to avoid them:
 - Permissions
   - Ensure the pipeline/job roles can read/write your S3 prefixes and pass roles.
 
-Happy Coding! ❤️
+Link to the full code repo: https://github.com/weirdion/sagemaker-pipeline-example
+
+Don't forget to `cdk destroy` and Happy Coding! ❤️
