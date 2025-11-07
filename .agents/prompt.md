@@ -88,9 +88,18 @@ Senior cloud engineer writing practical, self-documenting examples of problems s
 9. **Closing**
    - "Future Improvements" or "Final Thoughts" section
    - Acknowledge limitations
-   - Link to full code repository: "Full code is available on my Github repository"
+   - Link to full code repository when one exists. If the project stays local-only, document the key Make targets / scripts inline instead.
    - Call to action for feedback
    - Humble sign-off: "Let me know if you found this useful 🙂"
+
+### Analysis / Opinion Posts
+
+Not every post is a start-to-finish tutorial. For essay-style or reflective pieces:
+
+- Lean into narrative flow anchored in real experiences and frustrations.
+- Use section headers that mirror themes or pain points rather than "The Why" / "The How".
+- Emphasize empathy, observations, and open questions more than code blocks.
+- Close with honest takeaways that acknowledge ambiguity and invite discussion.
 
 ## Code and Technical Details
 
@@ -226,12 +235,22 @@ Before publishing, ensure:
 - [ ] Commands show expected output
 - [ ] Cost considerations addressed for infrastructure
 - [ ] Security implications called out explicitly
-- [ ] Link to full working code repository included
+- [ ] Link to full working code repository (or, if private/local, capture the critical scripts/targets in the post)
 - [ ] Troubleshooting section for common issues
 - [ ] Future improvements acknowledged
 - [ ] Frontmatter complete (title, description, summary, tags, categories)
 - [ ] Headers are scannable with keywords
 - [ ] Humble closing with feedback invitation
+
+## Reusable Artifacts
+
+Call out automation or structure that makes the work repeatable even without a public repo:
+
+- Make targets (`brew-install`, `ollama-serve`, `deploy-prod`)
+- Config files like `Brewfile`, `pyproject.toml`, `DECISIONS.md`, lockfiles
+- Helper scripts or snippets that glue services together
+
+Highlighting these inline keeps posts useful for future-you and readers who want just the commands.
 
 ## File References and Paths
 
