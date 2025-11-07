@@ -13,14 +13,14 @@ draft = false
 
 ## The Why 🤔
 
-I was helping out someone today to get snapshot visibility into a DynamoDB table via Athena. The plan was: “catalog the table, run a query, call it a day.” Instead I bounced between four approaches, each failing in slightly different (and educational) ways before landing on a Glue ETL job that emits Parquet. If you’re trying to follow a similar breadcrumb trail, here’s the full map — dead ends included.
+I was helping out someone this week to get snapshot visibility into a DynamoDB table via Athena. The plan was: “catalog the table, run a query, call it a day.” Instead I bounced between four approaches, each failing in slightly different (and educational) ways before landing on a Glue ETL job that emits Parquet. If you’re trying to follow a similar breadcrumb trail, here’s the full map — dead ends included.
 
 ## Architecture at a glance
 
 ![Starting from DynamoDB, ending into Athena.](feature.png)
 
 - `DataStack` is the shared foundation: DynamoDB table (PITR on), S3 bucket with lifecycle rules, Glue database, Athena workgroup (`recursiveDeleteOption: true` so teardown doesn’t get stuck), and a Python data seeder Lambda for mock data.
-- Each failure path is isolated in its own CDK stack so I can `cdk deploy ExportJsonStack` or tear it down without touching the others.
+- Each failure path is isolated in its own CDK stack so I can `cdk deploy ExportJsonStack`, or tear it down without touching the others.
 - Source is under `bin/` + `lib/stacks/`, with helper code in `resources/` for the seeder and Glue ETL script.
 
 The code is available in my example repository - [weirdion/dynamodb-glueetl-athena-cdk-example](https://github.com/weirdion/dynamodb-glueetl-athena-cdk-example/)
