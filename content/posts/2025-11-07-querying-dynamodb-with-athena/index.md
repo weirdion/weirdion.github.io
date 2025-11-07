@@ -7,7 +7,7 @@ categories = ["AWS", "DynamoDB", "Athena", "Glue", "CDK", "Data Engineering"]
 tags = ["dynamodb", "athena", "glue", "etl", "parquet", "ion", "json", "aws-cdk"]
 feature = "featured.png"
 layout = "simple"
-draft = true
+draft = false
 +++
 
 
@@ -26,7 +26,7 @@ I was helping out someone today to get snapshot visibility into a DynamoDB table
 The code is available in my example repository - [weirdion/dynamodb-glueetl-athena-cdk-example](https://github.com/weirdion/dynamodb-glueetl-athena-cdk-example/)
 
 Dyanmo DB sample data, to mock real life entries, not just simple strings and numbers.
-![DynamoDB sample data](screenshot-dynamodb-sample) 
+![DynamoDB sample data](screenshot-dynamodb-sample.png)
 
 ## Approach 1 — Glue crawler pointed directly at DynamoDB (fails fast)
 
