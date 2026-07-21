@@ -12,6 +12,8 @@ draft = false
 
 **Disclaimer:** _This is a personal setup, not a recommendation for your team. I'll be honest about what I landed on, but the whole point of this post is that the right answer depends on your context — and mine (someone who jumps across a lot of repos) is probably not yours._
 
+![AI generated image of a crossroads with a wooden signpost at the center pointing toward several floating code-editor windows, rendered in a flat slate, wood, and off-white palette — a visual for steering coding agents in different directions rather than down one prescribed path.](featured.png "AI generated image of a crossroads with a wooden signpost pointing toward several floating code-editor windows — steering coding agents rather than templating them.")
+
 I keep a lot of repos. Work spans app code, shared libraries, and infrastructure; on the side there's a homelab, a couple of creative projects, and whatever I'm currently nerd-sniped by. On any given day I might touch five of them, and I do it with a coding agent riding shotgun these days.
 
 The problem crept up on me slowly: I was re-explaining myself. Every new session, every compacted context, every repo I hadn't opened in a month — the agent would start cold, and I'd re-establish the same things. How I like commits. That decisions get logged, not re-litigated. That "done" means verified, not "the code compiles." It wasn't dramatic. It was a slow tax, paid a dozen times a day.
