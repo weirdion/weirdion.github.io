@@ -2,6 +2,16 @@
 
 This document captures the writing style and approach for blog posts on this site. Use this as a reference when drafting, editing, or completing blog content.
 
+> **Steer:** this project follows the shared ways-of-working in the public `agent-steer` repo. Load its `INDEX.md` (spine always; ways-of-working / preferences on relevance), then this guide — which states what's **local** to the blog: the writing voice and post conventions. Where the steer and this guide overlap on *conduct* (honesty, no inflation, verify before claiming), the steer governs; the writing-specific craft below is this project's own.
+
+## The load-bearing signature: honest debugging narratives
+
+Above every convention below, this is the through-line of the best posts — name it, don't lose it:
+
+**The dead ends are the value.** The strongest posts document the *failed* approaches, not just the working one — "here's the full map, dead ends included" (see the DynamoDB→Athena post: four failed approaches before the one that worked). A clean tutorial that pretends the path was straight is weaker and less honest than the real breadcrumb trail. When a post has a debugging arc, keep the wrong turns and say what each one taught.
+
+This is the same instinct that runs through everything else here: capture what was actually learned — including the failures — so it helps the next person (often future-you). The Why/How/Test/Future structure, the real error messages, the "this caught me during iteration" — all of it serves that one ethos.
+
 ## Author Profile
 
 Senior cloud engineer writing practical, self-documenting examples of problems solved. Not optimizing for clicks or monetization, but does consider SEO and agentic searchability to help others find solutions to similar problems.
