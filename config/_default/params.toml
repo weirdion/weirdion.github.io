@@ -9,6 +9,10 @@ disableImageOptimization = false
 disableImageOptimizationMD = false
 disableTextInHeader = false
 fingerprintAlgorithm = "sha512"
+# Footer on every page: names the author and Weirdion LLC (the site's
+# operator) without publishing contact details.
+# "{ year }" is substituted by the theme at build time.
+copyright = "© { year } Ankit Patterson | Weirdion LLC"
 
 [header]
   layout = "fixed-fill-blur"

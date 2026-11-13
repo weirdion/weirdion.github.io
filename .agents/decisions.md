@@ -56,3 +56,9 @@ Dependabot was added and then reverted ("Revert 'Add dependabot'"). It was **not
 
 **Why:** the tags can't be removed by config or a small override. Tested with Hugo 0.167.0: `_internal/` overrides are ignored, and a `twitter_cards.html` partial override breaks the build because Blowfish calls `template "_internal/twitter_cards.html"`. The only routes are forking Blowfish's whole `head.html` (re-synced on every theme bump) or regex-stripping the built HTML. Neither is worth it for invisible markup: X previews links from the `og:*` tags anyway, and some other apps read `twitter:card` for large-image previews. Revisit only if Hugo adds a switch or Blowfish stops calling the embedded template.
 
+## 2026-11-12 — Footer names the author and Weirdion LLC; no contact details on the site
+
+**Decision:** the footer on every page reads `© { year } Ankit Patterson | Weirdion LLC` (`copyright` in `config/_default/params.toml`). The site publishes no contact details (no email, address, or phone) and no contact page.
+
+**Why:** weirdion.com needs to be visibly associated with Weirdion LLC, the entity that owns the domain. The operator doesn't want contact details on the site; verifiers get those directly. The operator chose this wording over "Published by Weirdion LLC". It's cleaner, with the known trade-off that the pipe leaves open which of the two holds copyright on the posts. That was accepted as low-stakes for a personal blog; making the LLC's role explicit again is a one-line change. The JSON-LD `publisher` stays as the theme's Person, because changing it means overriding all of Blowfish's `schema.html`.
+
