@@ -16,24 +16,6 @@ Deferred work. Each entry: what it is, why it's parked, and what pulls it forwar
 **Why parked:** the earlier Dependabot was reverted by accident, not on purpose (see decisions.md). It was never revisited.
 **Pull forward:** with the script decision above.
 
-## Clean up Jekyll-era leftovers
-
-**What:** `.gitignore` is still Jekyll/Ruby/RubyMotion boilerplate; replace it with a Hugo-focused one (keep `/public/`, `/resources/`, `.DS_Store`, `.hugo_build.lock`; decide on `.idea/` and `.vscode/`). Remove the stale local dirs `_site/` and `.bundle/`, plus the empty `weirdion/assets/` and `data/`.
-**Why parked:** cosmetic; needs a pass to confirm nothing still reads them.
-**Pull forward:** any maintenance session.
-
-## Fix garbled line in `docs/RUNBOOK.md`
-
-**What:** the repo-structure bullet is cut off at "CI (GitHu", and "b Pages deploy)" ended up after the Troubleshooting section.
-**Why parked:** found during adoption; out of scope for that change.
-**Pull forward:** next edit to the runbook.
-
-## Leftover `subscribe.html`
-
-**What:** untracked `layouts/partials/subscribe.html`, the EmailOctopus form left over from the reverted #27. Delete it unless the Substack embed reuses the slot. (`.idea/` and `.vscode/settings.json` are now gitignored.)
-**Why parked:** waiting on the Substack embed decision.
-**Pull forward:** with the Substack embed item below.
-
 ## Embed Substack subscribe on the site
 
 **What:** a native Substack embed (or subscribe link block) on posts or in the footer, so readers can subscribe to weirdion.substack.com without leaving the site. Would replace the reverted EmailOctopus form.
@@ -58,9 +40,3 @@ Deferred work. Each entry: what it is, why it's parked, and what pulls it forwar
 Cost and security run through every post. Dead ends and snippet moments are logged in alembix's own agent docs during the build; pull them from there when drafting.
 **Why parked:** the build is still at the architecture-spike stage; posts follow working code.
 **Pull forward:** when the spike lands a working slice, draft post 1 (and 2 if the spike produced enough).
-
-## Home page meta description is the theme default
-
-**What:** `https://weirdion.com/` serves `<meta name="description" content="This page was built using the Blowfish theme for Hugo.">`, which is what search results show for the home page. Set a real site description (likely `description` in `config/_default/languages.en.toml` params). The site has been live with this since before 2026-11-12.
-**Why parked:** found during the v3 comparison; content/SEO, not part of the dependency bump.
-**Pull forward:** next SEO or config pass. It's a one-line fix.

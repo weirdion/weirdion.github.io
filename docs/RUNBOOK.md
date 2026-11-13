@@ -31,7 +31,7 @@ Links to key config
 - [`archetypes/`](../archetypes): Content blueprints. Default at [`archetypes/default.md`](../archetypes/default.md)
 - [`resources/_gen/`](../resources/_gen): Generated resources from Hugo Pipes
 - [`public/`](../public): Build output (artifact). Can be cleaned and not required to commit
-- [`.github/workflows/`](../.github/workflows): CI (GitHu
+- [`.github/workflows/`](../.github/workflows): CI (GitHub Pages deploy)
 
 ---
 
@@ -97,7 +97,7 @@ Workflow: [deploy-gh-pages.yml](../.github/workflows/deploy-gh-pages.yml)
   - Build with: `hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --cacheDir "$RUNNER_TEMP/hugo_cache"`
     - Note: `--baseURL` overrides [`hugo.toml`](../hugo.toml) `baseURL` at build time so links point to the Pages URL.
   - Upload `./public` as the Pages artifact.
-- Deploy job: uses `actions/deploy-pages@v4` to publish the artifact to GitHub Pages (environment `github-pages`).
+- Deploy job: uses `actions/deploy-pages` (v5, SHA-pinned) to publish the artifact to GitHub Pages (environment `github-pages`).
 
 Operations
 - To publish: merge/push to `main`. CI will build and deploy automatically.
@@ -110,7 +110,6 @@ Operations
 - Missing theme/styles on CI: ensure submodules are initialized. Locally run `git submodule update --init --recursive`.
 - Styling not applied: check `assets/css/custom.css` and ensure the theme is configured to pick it up (Blowfish does by default).
 - Draft or future posts not visible in prod: set `draft = false` and ensure `date` is not in the future.
-b Pages deploy)
 
 ## Maintenance checklist
 
