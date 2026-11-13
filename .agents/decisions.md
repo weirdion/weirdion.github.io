@@ -44,3 +44,9 @@ Dependabot was added and then reverted ("Revert 'Add dependabot'"). It was **not
 
 **Why:** tags are mutable, so a SHA pin means an upstream retag can't change what runs. The checksum check means a tampered or corrupted download fails the build instead of shipping. Dart Sass and npm were boilerplate from Hugo's sample workflow: nothing in this repo or the theme compiles SCSS, and there is no `package-lock.json`. Removing them takes out two unpinned downloads.
 
+## 2026-11-12 — Dependabot for GitHub Actions only; Hugo/Blowfish stay manual
+
+**Decision:** `.github/dependabot.yml` covers the `github-actions` ecosystem only: monthly, grouped into one PR, with a `cooldown` of `default-days: 14`. Hugo and the Blowfish submodule are bumped by hand, together, following `docs/RUNBOOK.md`. Renovate was not adopted. The untracked `scripts/update-gh-actions-versions.sh` was retired.
+
+**Why:** the Actions are the one part automation handles well. They're SHA-pinned, they run with Pages deploy permissions, and they drift unnoticed. Hugo and Blowfish are the opposite: CI's Hugo version must stay inside the theme's supported range, Dependabot can't update the `HUGO_VERSION` env var, it would bump the submodule to a branch commit rather than a release tag, and theme bumps need a visual check (the v2 → v3 header regression would have passed an automated PR). Renovate could regex-manage `HUGO_VERSION`, but installing an app and maintaining extra config isn't worth it for five dependencies. The retired script resolved the newest Hugo release, which broke both the two-week age rule and the theme range.
+

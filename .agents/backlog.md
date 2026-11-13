@@ -4,18 +4,6 @@ Deferred work. Each entry: what it is, why it's parked, and what pulls it forwar
 
 ---
 
-## Fix or drop `scripts/update-gh-actions-versions.sh`
-
-**What:** untracked script that resolves the *newest* Hugo release (and Dart Sass, which CI no longer uses) and writes it into the workflow. That breaks two rules: the two-week dependency age, and keeping Hugo inside the theme's `module.hugoVersion` range (newest Hugo is often above the theme's max). The name is also misleading. Either rewrite it to pick the newest Hugo release that is at least two weeks old *and* within the theme's range, or delete it in favor of dependency automation (below).
-**Why parked:** depends on the dependency-automation choice.
-**Pull forward:** with the dependency automation item.
-
-## Dependency automation (Dependabot or Renovate)
-
-**What:** re-add automated update PRs for GitHub Actions (now pinned to commit SHAs with a version comment; Dependabot and Renovate both update that format) and possibly the theme submodule. Configure a minimum-age cooldown so it respects the two-week rule. Theme bumps still need the manual header/post/mobile comparison (see `docs/RUNBOOK.md`), so automation should open PRs, not auto-merge.
-**Why parked:** the earlier Dependabot was reverted by accident, not on purpose (see decisions.md). It was never revisited.
-**Pull forward:** with the script decision above.
-
 ## Embed Substack subscribe on the site
 
 **What:** a native Substack embed (or subscribe link block) on posts or in the footer, so readers can subscribe to weirdion.substack.com without leaving the site. Would replace the reverted EmailOctopus form.
@@ -40,3 +28,9 @@ Deferred work. Each entry: what it is, why it's parked, and what pulls it forwar
 Cost and security run through every post. Dead ends and snippet moments are logged in alembix's own agent docs during the build; pull them from there when drafting.
 **Why parked:** the build is still at the architecture-spike stage; posts follow working code.
 **Pull forward:** when the spike lands a working slice, draft post 1 (and 2 if the spike produced enough).
+
+## Remove X/Twitter card meta tags
+
+**What:** every page has `twitter:card` / `twitter:title` / `twitter:description` meta tags (and `twitter:image` on posts). The operator doesn't want to support X in any way. The share buttons and profile links already leave X out, so these tags are the only X-specific output. They come from Hugo's embedded template, which Blowfish's `partials/head.html` calls as `template "_internal/twitter_cards.html"`. Tested on 2026-11-12 with Hugo 0.167.0: there is no config switch. Overrides at `layouts/_internal/`, `layouts/_partials/_internal/`, and `layouts/partials/_internal/` are ignored (embedded wins). A `layouts/{_,}partials/twitter_cards.html` override breaks the build (`no such template "_internal/twitter_cards.html"`). Remaining options: (a) override Blowfish's whole `head.html` minus the two X lines, plus a drift check run on every theme bump; (b) strip the tags from `public/` after the build, in CI and the Makefile.
+**Why parked:** waiting on the operator's choice between the options; both carry ongoing cost.
+**Pull forward:** when the operator picks one.

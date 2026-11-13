@@ -1,0 +1,24 @@
+# Dependency update PRs for GitHub Actions only.
+#
+# Hugo and the Blowfish theme are deliberately NOT automated: they must move
+# together (CI's HUGO_VERSION has to stay inside the theme's
+# module.hugoVersion range), Dependabot can't update the HUGO_VERSION env var,
+# and theme bumps need a visual check against the live site. See
+# docs/RUNBOOK.md and .agents/decisions.md.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    # Two-week minimum release age before proposing a version update
+    # (security updates are not delayed by cooldown).
+    cooldown:
+      default-days: 14
+    # One PR per run for all actions instead of one per action.
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "ci"
