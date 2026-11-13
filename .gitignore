@@ -99,9 +99,12 @@ build-iPhoneSimulator/
 # Used by RuboCop. Remote config files pulled in from inherit_from directive.
 # .rubocop-https?--*
 
+### JetBrains IDEs ###
+.idea/
+
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
+# .vscode/settings.json is machine-local — keep it ignored (do not un-ignore)
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
