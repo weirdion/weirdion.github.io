@@ -1,4 +1,9 @@
-/* Increase site title font size */
-.main-menu .text-base {
+/* Larger header: site title (.text-base), desktop nav labels, and the
+   accessibility / appearance buttons. Blowfish v2 gave all of these
+   .text-base; v3 uses span.text-sm for labels and text-sm (or nothing) on
+   the buttons, so they're targeted explicitly to keep the v2-era size. */
+.main-menu .text-base,
+.main-menu nav a > span.text-sm,
+.main-menu nav button {
   font-size: 1.5rem !important;
 }

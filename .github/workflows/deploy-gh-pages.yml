@@ -27,23 +27,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      DART_SASS_VERSION: 1.90.0
-      HUGO_VERSION: 0.148.2
+      # Keep within the theme's supported range (themes/blowfish/config.toml → module.hugoVersion).
+      HUGO_VERSION: 0.167.0
       HUGO_ENVIRONMENT: production
       TZ: America/Indiana/Indianapolis
     steps:
       - name: Install Hugo CLI
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
-          sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Install Dart Sass
-        run: |
-          wget -O ${{ runner.temp }}/dart-sass.tar.gz https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz
-          tar -xf ${{ runner.temp }}/dart-sass.tar.gz --directory ${{ runner.temp }}
-          mv ${{ runner.temp }}/dart-sass/ /usr/local/bin
-          echo "/usr/local/bin/dart-sass" >> $GITHUB_PATH
+          cd "${{ runner.temp }}"
+          base="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}"
+          deb="hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          wget -q "${base}/${deb}" "${base}/hugo_${HUGO_VERSION}_checksums.txt"
+          # Verify the download against the release's published checksums before installing.
+          grep " ${deb}\$" "hugo_${HUGO_VERSION}_checksums.txt" | sha256sum -c -
+          sudo dpkg -i "${deb}"
+      # Actions are pinned to commit SHAs (tags are mutable); the comment names the release.
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           submodules: recursive
           fetch-depth: 0
@@ -51,12 +51,10 @@ jobs:
         run: git submodule update --init --recursive
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - name: Cache Restore
         id: cache-restore
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: |
             ${{ runner.temp }}/hugo_cache
@@ -74,13 +72,13 @@ jobs:
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Cache Save
         id: cache-save
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: |
             ${{ runner.temp }}/hugo_cache
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: ./public
 
@@ -94,4 +92,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

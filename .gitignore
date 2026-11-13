@@ -134,3 +134,6 @@ _site/
 
 # blowfish theme
 themes/blowfish
+
+# Playwright MCP session artifacts (snapshots, screenshots, console logs)
+.playwright-mcp/

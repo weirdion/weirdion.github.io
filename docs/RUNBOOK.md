@@ -88,9 +88,10 @@ FYI
 
 Workflow: [deploy-gh-pages.yml](../.github/workflows/deploy-gh-pages.yml)
 - Triggers: on push to `main` and manual dispatch.
-- Environment vars: `HUGO_VERSION=0.148.2`, `HUGO_ENVIRONMENT=production`, `TZ=America/Indiana/Indianapolis`, `DART_SASS_VERSION=1.90.0`.
+- Environment vars: `HUGO_VERSION=0.167.0`, `HUGO_ENVIRONMENT=production`, `TZ=America/Indiana/Indianapolis`.
 - Steps (build job):
-  - Install Hugo Extended and Dart Sass.
+  - Install Hugo Extended, verified against the release's published SHA-256 checksums.
+  - Actions are pinned to commit SHAs, with the release tag in a trailing comment.
   - Checkout with submodules (`submodules: recursive`) and `git submodule update --init --recursive`.
   - Configure GitHub Pages and restore a runner-temp cache for Hugo (`--cacheDir`).
   - Build with: `hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/" --cacheDir "$RUNNER_TEMP/hugo_cache"`
@@ -100,7 +101,7 @@ Workflow: [deploy-gh-pages.yml](../.github/workflows/deploy-gh-pages.yml)
 
 Operations
 - To publish: merge/push to `main`. CI will build and deploy automatically.
-- To bump Hugo version: edit `HUGO_VERSION` in the workflow file and validate locally with the same version.
+- To bump Hugo version: stay inside the theme's `module.hugoVersion` range (`themes/blowfish/config.toml`) and pick a release at least two weeks old. Edit `HUGO_VERSION` in the workflow, then validate locally with that exact version (`make build HUGO=/path/to/hugo`) and expect zero `WARN` lines.
 - To invalidate bad cache: change the cache key or clear the `hugo_cache` path usage in the workflow.
 
 ## Troubleshooting
@@ -113,7 +114,7 @@ b Pages deploy)
 
 ## Maintenance checklist
 
-- Keep Hugo and the theme updated (submodule + workflow `HUGO_VERSION`).
+- Keep Hugo and the theme updated together (submodule + workflow `HUGO_VERSION`). After a theme bump, compare the header, a post, and mobile against the live site. `assets/css/custom.css` targets theme classes and can silently stop matching (it did on the v2 → v3 bump).
 - Review `params.toml` toggles for features you need (search, TOC, reading time, etc.).
 - Verify menus after adding new top-level sections (`menus.en.toml`).
 - Periodically clean generated folders: `make clean` and remove `resources/_gen/` if needed.

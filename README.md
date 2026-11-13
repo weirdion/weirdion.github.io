@@ -11,7 +11,7 @@ Personal blog
 
 ## Quick start
 
-- Install Hugo Extended (match CI if possible: 0.148.2)
+- Install Hugo Extended. CI pins `HUGO_VERSION` in the workflow (currently 0.167.0), kept inside the theme's supported range (`themes/blowfish/config.toml`). To build with a specific binary: `make build HUGO=/path/to/hugo`
 - Serve locally with drafts:
 
 ```sh
