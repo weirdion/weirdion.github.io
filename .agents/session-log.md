@@ -14,9 +14,9 @@ Live state, newest first. Read the top entry first and write it last. If a later
 - `Makefile`: `HUGO ?= hugo` override; `build` now uses `--gc --minify` like CI. `.gitignore`: `.playwright-mcp/`.
 - Verified with Hugo 0.167.0 (official pkg, checksum-checked, scratch copy): zero WARN lines, 332 pages. Compared against live weirdion.com with Playwright: 12 paths (home, lists, 3 posts, RSS 14 items, sitemap 16, search index 171, favicon, manifest, 404). Titles, descriptions, og:image, canonical, favicons, and share links all match. Umami is present on all 14 posts in the production build. No console errors.
 
-**Visible v3 changes kept (operator to confirm):** post images render at natural width instead of stretched to the content width; the sticky header gets a tinted glass background on scroll; on mobile, the accessibility button moved into the hamburger menu and the appearance button is slightly smaller; list cards show thumbnails.
+**Visible v3 changes kept (operator approved, 2026-11-12):** post images render at natural width instead of stretched to the content width; the sticky header gets a tinted glass background on scroll; on mobile, the accessibility button moved into the hamburger menu and the appearance button is slightly smaller; list cards show thumbnails.
 
 **Ruled out:** "Umami missing" was a false alarm. I'd read `public/` after the dev server overwrote it; analytics are production-only by design. "Blank thumbnails" were lazy-loaded images in a non-scrolling full-page screenshot; all 11 load after scrolling.
 
-**Next:** operator reviews the visible changes; then PR → merge → re-run the live comparison against the deployed site.
+**Next:** merge PR #36, then re-run the live comparison against the deployed site.
 
