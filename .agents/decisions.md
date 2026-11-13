@@ -50,3 +50,9 @@ Dependabot was added and then reverted ("Revert 'Add dependabot'"). It was **not
 
 **Why:** the Actions are the one part automation handles well. They're SHA-pinned, they run with Pages deploy permissions, and they drift unnoticed. Hugo and Blowfish are the opposite: CI's Hugo version must stay inside the theme's supported range, Dependabot can't update the `HUGO_VERSION` env var, it would bump the submodule to a branch commit rather than a release tag, and theme bumps need a visual check (the v2 → v3 header regression would have passed an automated PR). Renovate could regex-manage `HUGO_VERSION`, but installing an app and maintaining extra config isn't worth it for five dependencies. The retired script resolved the newest Hugo release, which broke both the two-week age rule and the theme range.
 
+## 2026-11-12 — Keep the X/Twitter card meta tags
+
+**Decision:** leave the `twitter:*` meta tags that Hugo's embedded template emits. The site carries no other X support: no share button and no profile link (`sharingLinks` and the author links exclude it).
+
+**Why:** the tags can't be removed by config or a small override. Tested with Hugo 0.167.0: `_internal/` overrides are ignored, and a `twitter_cards.html` partial override breaks the build because Blowfish calls `template "_internal/twitter_cards.html"`. The only routes are forking Blowfish's whole `head.html` (re-synced on every theme bump) or regex-stripping the built HTML. Neither is worth it for invisible markup: X previews links from the `og:*` tags anyway, and some other apps read `twitter:card` for large-image previews. Revisit only if Hugo adds a switch or Blowfish stops calling the embedded template.
+

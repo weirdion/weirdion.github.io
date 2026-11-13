@@ -28,9 +28,3 @@ Deferred work. Each entry: what it is, why it's parked, and what pulls it forwar
 Cost and security run through every post. Dead ends and snippet moments are logged in alembix's own agent docs during the build; pull them from there when drafting.
 **Why parked:** the build is still at the architecture-spike stage; posts follow working code.
 **Pull forward:** when the spike lands a working slice, draft post 1 (and 2 if the spike produced enough).
-
-## Remove X/Twitter card meta tags
-
-**What:** every page has `twitter:card` / `twitter:title` / `twitter:description` meta tags (and `twitter:image` on posts). The operator doesn't want to support X in any way. The share buttons and profile links already leave X out, so these tags are the only X-specific output. They come from Hugo's embedded template, which Blowfish's `partials/head.html` calls as `template "_internal/twitter_cards.html"`. Tested on 2026-11-12 with Hugo 0.167.0: there is no config switch. Overrides at `layouts/_internal/`, `layouts/_partials/_internal/`, and `layouts/partials/_internal/` are ignored (embedded wins). A `layouts/{_,}partials/twitter_cards.html` override breaks the build (`no such template "_internal/twitter_cards.html"`). Remaining options: (a) override Blowfish's whole `head.html` minus the two X lines, plus a drift check run on every theme bump; (b) strip the tags from `public/` after the build, in CI and the Makefile.
-**Why parked:** waiting on the operator's choice between the options; both carry ongoing cost.
-**Pull forward:** when the operator picks one.
