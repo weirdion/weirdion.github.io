@@ -113,7 +113,8 @@ Operations
 
 ## Maintenance checklist
 
-- Keep Hugo and the theme updated together (submodule + workflow `HUGO_VERSION`). After a theme bump, compare the header, a post, and mobile against the live site. `assets/css/custom.css` targets theme classes and can silently stop matching (it did on the v2 → v3 bump).
+- GitHub Actions are bumped by Dependabot (`.github/dependabot.yml`): one grouped PR a month, releases at least 14 days old. Review and merge it like any PR.
+- Keep Hugo and the theme updated together by hand (submodule + workflow `HUGO_VERSION`). After a theme bump, compare the header, a post, and mobile against the live site. `assets/css/custom.css` targets theme classes and can silently stop matching (it did on the v2 → v3 bump).
 - Review `params.toml` toggles for features you need (search, TOC, reading time, etc.).
 - Verify menus after adding new top-level sections (`menus.en.toml`).
 - Periodically clean generated folders: `make clean` and remove `resources/_gen/` if needed.
