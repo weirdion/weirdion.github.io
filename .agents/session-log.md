@@ -4,25 +4,19 @@ Live state, newest first. Read the top entry first and write it last. If a later
 
 ---
 
-## 2026-11-12 — Adopted agent-steer
+## 2026-11-12 — Dependency bump: Hugo 0.167.0, Blowfish v3.9.0, Actions SHA-pinned
 
-**Done:**
-- `.agents/prompt.md` is now the boot doc (steer pointer, read order, index, local rules). The old content moved to `.agents/writing-style.md`, which now also holds the SEO and formatting rules from `.template/context.md`. The agent-conduct bits the steer already covers were removed.
-- New: `decisions.md` (seeded only with decisions whose reasons are known), `backlog.md` (maintenance items found during assessment, plus the Substack embed and dependency automation), this log, and a root `CLAUDE.md` pointer.
-- Post scaffold moved to `archetypes/posts.md`. Verified that `hugo new content posts/2099-01-01-archetype-smoke-test/index.md` gives the right title, date and `draft = true`; the test bundle was then deleted. `.template/` was removed (it was never tracked).
-- Site build checked with local Hugo 0.169.0: 332 pages, no errors. Theme-compat and deprecation warnings are still there and tracked in the backlog.
+**Done (branch `deps-hugo-blowfish-actions`):**
+- Theme submodule v2.89.0 → v3.9.0 (`ebe683e`); CI Hugo 0.148.2 → 0.167.0 (theme range 0.164–0.167; see decisions.md).
+- Workflow: Actions bumped to current majors and SHA-pinned (checkout v7.0.1, configure-pages v6.0.0, cache v6.1.0, upload-pages-artifact v5.0.0, deploy-pages v5.0.1); Hugo download is checksum-verified; Dart Sass and npm steps removed. The checksum step was simulated locally: it passes on the real `.deb` and fails on a tampered one.
+- Config deprecations fixed (`languageCode` → `locale`, `languageName` → `label`). The `sharing-links.html` override moved to `hugo.Data`, matching upstream; upstream's `safeURL` was not adopted because live share URLs render correctly without it.
+- `custom.css`: v3 changed header classes, so the nav labels and accessibility/appearance buttons had shrunk. The selectors were extended to keep the v2 sizes.
+- `Makefile`: `HUGO ?= hugo` override; `build` now uses `--gc --minify` like CI. `.gitignore`: `.playwright-mcp/`.
+- Verified with Hugo 0.167.0 (official pkg, checksum-checked, scratch copy): zero WARN lines, 332 pages. Compared against live weirdion.com with Playwright: 12 paths (home, lists, 3 posts, RSS 14 items, sitemap 16, search index 171, favicon, manifest, 404). Titles, descriptions, og:image, canonical, favicons, and share links all match. Umami is present on all 14 posts in the production build. No console errors.
 
-- Compared against the old machine-local blogging desk (`.agent-blog`, now retired). Pulled in the parts that belong to this repo:
-  - into `writing-style.md`: dead-ends-are-the-value (from PR #34, since closed), the featured-image-embed convention (checked: 13 of 14 posts), the anchor and non-prescriptive rules for opinion posts, and the drafting workflow;
-  - into `prompt.md`: the PR-flow / no-history-rewrite rule (the #33 scar);
-  - in `archetypes/posts.md`: the image embed moved to the top.
-- Corrected an earlier backlog entry: the "inconsistent feature image naming" isn't a bug. Blowfish matches `*feature*` filenames and ignores the `feature =` key.
+**Visible v3 changes kept (operator approved, 2026-11-12):** post images render at natural width instead of stretched to the content width; the sticky header gets a tinted glass background on scroll; on mobile, the accessibility button moved into the hamburger menu and the appearance button is slightly smaller; list cards show thumbnails.
 
-- Closed PR #34 as superseded: its writing-guide content was already folded in, and its `.gitignore` change (ignore `.idea/` and `.vscode/settings.json`) is applied here.
-- Moved the Substack/Medium playbook from the desk into `.agents/syndication.md` (conditional read when cross-posting), leaving out another project's specifics.
-- Retired the desk: the alembix series plan moved to `backlog.md`, and the build-repo kinds and log-dead-ends-where-you-build rules moved to `writing-style.md`. The operator is deleting or trimming the desk; the alembix naming decision belongs in that repo's own decisions log.
-- Added the public-repo review rule to `prompt.md`, then applied it to this change: home-relative paths were removed, and an unneeded operator detail came out of decisions.md.
+**Ruled out:** "Umami missing" was a false alarm. I'd read `public/` after the dev server overwrote it; analytics are production-only by design. "Blank thumbnails" were lazy-loaded images in a non-scrolling full-page screenshot; all 11 load after scrolling.
 
-**State:** committed on branch `agent-steer-adoption`; PR open.
+**Next:** merge PR #36, then re-run the live comparison against the deployed site.
 
-**Next:** merge the PR. Then work through the backlog, starting with the Hugo + Blowfish bump.
